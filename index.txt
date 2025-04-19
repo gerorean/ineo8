@@ -1,0 +1,1255 @@
+APP iplace iloc  p con capacidades diferentes
+
+imagenes puente aranda kTapa0
+http://www.puentearanda.gov.co/
+
+
+CÓDIGOS COLORES APP
+1		,'brown border'				
+2		,'orange border'			
+3		,'yellow border'			
+12		,'yellow green border'		
+4		,'green border'				
+5		,'turquoise border'			
+6		,'blue border'				
+13		,'violet border'			
+7		,'magenta border'			
+8		,'pink border'				
+9		,'red border'				
+10		,'gray border'				
+11		,'border color same as text'
+
+
+OJO con las consultas de las bases de datos, estas son asincronas y hay que revizar el código para que no se reviente la app por inexistencia o falla de datos por demora en la carga o la actualización
+
+OJO consultas repetidas a la base de datos no deberían pasar
+
+Al iniciar solo esta cargado papas por defecto [7, 1, 8, 2, 2, 0, 0, 0, 0, 0, 0, ''], rumbo esta en [] y rumbi no existe '', ver como hacer para hacer una busqueda con rumbi a la base de datos para que se carguen los anuncios del inicio
+
+
+OJO f0012() se esta llamando con cada clic sobre el boton central asi no haga nada, por ejemplo arriba y abajo, también con los clicks de subir o bajar con los botones, esto no debe pasar.. revizar 
+RTA >> encontre que f0012() esta ligado con f0017() por eso pasa eso, ver como se puede evitar 
+hay que detectar cuando hay un cambio de contenido o no en f0017 y desde allí controlar el paso a f0012, por ahora se deja asi pero hay que ver como se arregla esto, no debe pasar a producción así, volvería lento al servidor!
+
+
+menu iconos:
+https://www.gaijin.at/en/infos/unicode-character-table
+
+
+Curso de accesibilidad web: Auditoria de proyectos
+https://platzi.com/clases/4425-auditoria-accesibilidad-web/55231-como-se-definen-los-lineamientos-de-accesibilidad-/
+
+
+https://www.accessibilitychecker.org/
+
+
+node require electron - aplicaciones de escritorio!
+
+How To Detect Touch Screen Using Javascript:
+https://youtu.be/Om9DvF4Gr_Y
+
+SERVICIOS adaptación(claros, breves y sencillos), verificación(del barrio y reales) y actualización(vigentes) de la información (anuncios locales)
+
+//NOTA IMPORTANTE! Si fuera punto0(Editor Morse) min vale m + cut; esto porque si no esta escribiendo morse, todas son teclas especiales que inician minimo con una raya o un sostenido, solo tienen rayas y pueden terminar con o sin un punto, ej --- --· -· ---· , esto permite que se puedan hacer múltiples clics superrápidos ....... y NO se confundan con una función especial!!!
+
+SALTOS (+/-)1,(+/-)5,(+/-)25
+              
+NOTA al incorporar Morse se reemplazo 't3x3' por 'true/*t3x3*/', se ocultaron varias lineas, probar y mirar si se pueden ocultar y quitar del código 
+
+Botones visibles siempre, para botones 'inactivos/apagados':
+yBot7(hh49 -f0015(1)-)
+yBTNS[yBot1(f0049) yBot6 yBot4]
+g00VARS[76][2(7)]
+yKEYS[2][5(7)]1Permitir,0Bloquear
+-Botón borde negro con relleno translucido blanco:-> relleno translucido GRIS
+-Botón borde blanco con relleno translucido negro:-> borde GRIS
+
+
+INFORMACION PÚBLICA INCLUSIVA, la web con sala i (i nclusiva y acces i ble)
+inclusive local information
+PRODUCIDA POR EL GOBIERNO LOCAL (mesasde trabajo locales), PARA PERSONAS SIN O CON CIERTO GRADO DE DISCAPACIDAD
+
+INDICE DE ARCHIVOS inde*.js:
+d dATOS: CONSTANTES Y VARIABLES
+	0 VARIABLES Y CONSTANTES SENCILLAS
+	1 EXPRESIONES REGULARES
+	2 VOCES, ICONOS, VIDEOS E IMAGENES
+	3 SEÑAS Y GLOSAS
+	4 BRAILLE Y MORSE
+	5 OTROS
+	9 EVENTOS
+f fUNCIONES
+t tRANSVERSALES
+	0 t=0 
+	1 lOG() Y MISIONES DE CADA FUNCIÓN
+	2 CONFIGURACION Y ESTILO
+
+RUTAS (gRuta)
+1 Ajustes 1 estilo piñon
+2 AJUSTES 2 información SEÑAL TURISTICA
+3 ANUNCIOS //ANTES: INFORMACIÓN COMUNITARIA
+4 MENÚ PRINCIPAL
+5 MULTIMEDIA: DESCRIPCION DE IMAGENES, GUÍONES DE VIDEO O INFOGRAMAS
+6 CASOS (info general urgente/vital: se expone prblema y luego se sugiere la solución por ejemplo ¿que hacer en caso de emergencia - TOMADA DE: Colegio de Juan David) //ANTES: LIBRE
+7 SALA tecnologia
+
+AMBIENTES (ambi)
+0 inicio / sin ambiente
+2 TAPA INFORMATIVA X
+3 ALERTA Y! (ventana emergente cuando se produce la alerta! requiere de aceptar para cerrarla)
+4 PRESENTACION AV
+5 RUTA X
+
+BANDERA 1X1.5
+
+FUNCIONES()
+lOU() sin Usarse [ ¡Atención! ¡este mensaje no debe salir por CONSOLA!
+lOG() sin Revizar
+lOC() Comentada
+lOI() Interrumpida
+lOK() OK - con funciones pendientes !!
+lOL() Lista - sin funciones pendientes
+
+RECURSOS (MULTIMEDIA)[lee formato + Reset(*)] + click + [Play] + click + [Pause] + click 
+* - Otra opción es reset por subir o bajar   	 ^_ _ _ _ _ _ _ _ _ _ _ _ |
+Formatos: (Audio es transversal y permanente dependiendo de la configuración del usuario)
+1 Anuncio 1 - Caso 1:
+	[<VISOR>Icono + Intérprete] + Texto:
+	(Formato + /Play/ + Anuncio completo{Aquí cambia el guion del intérprete})
+2 Video 1 - Audio 1 (YouTube):
+	[<VISOR>Video - Audio] + Texto:(Formato) {+ /Play/ + Reproducir video}
+3 Texto Video 1 - Audio 1:
+	[<VISOR>Icono + Intérprete] + Texto:(Formato + /Play/ + guion basado en Youtube, complementa a Youtube del punto 2 {Aquí cambia el guion del intérprete})
+4 Fotografía 1 - Imagén 1: (Drive - Fotos?):
+	[<VISOR>Fotografía + Intérprete] + Texto: (Formato + /Play/ + Descripción de la fotografía{Aquí cambia el guion del intérprete})
+5 Infografía 1 (Drive - Fotos?):
+	[<VISOR>Infografía + Intérprete] + Texto: (Formato + /Play/ + Descripción de la infografía{Aquí cambia el guion del intérprete})
+6 Mapa 1 (Google map - NaviLens?):
+	[<VISOR>Mapa] + Texto: (Formato + /Play/ + Descripción del mapa{Aquí cambia el guion del intérprete})
+7 Código QR 1 - NaviLens 1:
+	[<VISOR>codigo QR - NaviLens + Intérprete] + Texto: (Formato)
+	(Drive - Fotos? No tiene click de Play al igual que Arriba y Abajo, remplaza al enlace link para usuarios que quieran más info por su cuenta)
+
+
+COLORES - banderas
+1 AMARILLO
+2 AZUL
+3 ROJO
+4 VERDE
+5 BLANCO
+6 NEGRO
+7 VIOLETA
+8 NARANJA
+9 
+
+TECLAS FISICAS
+S 	dedo 3
+D 	dedo 2
+F 	dedo 1
+G H espacio
+J 	dedo 4
+K 	dedo 5
+L 	dedo 6
+N 7 CUADRADO - MENU
+M 4	DIAGONAL - CANCELAR/SALIR
+, 1 TRIANGULO ARRIBA
+B 0 HUECO CENTRAL
+X 3 TRIANGULO ABAJO
+C 6 REDONDO - ACEPTAR/ACCEDER
+V 9 BARRA VERTICAL - INFO
+
+CONFIGURACION DE g02RUTA:
+NOTA!TODAS LAS RUTAS DEBEN ESTAR ANCLADAS A g02RUTA[1]
+Filas:
+=x= quitar estas filas porque no se usan
+Columnas:
+0: id
+1: Nombre de la ruta
+2: [2RutaText] idRuta ALMACENAR el guíon o guiones parcial(es) tipo texto, por ej:menús, o fila de imagenes de la tapa y traerlo desde las RUTAS, dando el número de la columna que contiene el texto que va a tomar dentro de la ruta
+3: [3ColumTex] idCasilla (Dentro de la idRuta se toma el idColumna de la casilla que contiene el texto de la posición actual del usuario) Almacena el texto de la casilla (Dentro de la 2RutaText) que se va a poner en la tapa
+   si id es 0, toma el texto de kTapaI[id]
+4: libre
+5: [1PPAL]si tiene un 1 es una ruta principal, su misión: CARGAR la ruta 4 en pantalla "MENU" y memorizar el foco y la ruta de venía el usuario
+6: [idLOGO] id del icono que debe sali en la tapa info, mision: CARGAR el icono central de la ventana
+7: id de la ruta? 0 que la columna 0??
+8: id ruta padre, si esta columna = 0, entonces esa ruta no tiene padre, es una ruta principal, por ejemplo anuncios.
+9: id ruta abuelo
+10: id ruta bisabuelo
+11: id ruta tatarabuelo etc.
+
+IMAGENES gratis
+https://www.pexels.com/es-es/buscar/capslock/
+https://www.pexels.com/es-es/buscar/keyboard/
+https://www.istockphoto.com/es/search/2/image?phrase=disability&page=2
+https://www.pexels.com/es-es/buscar/blind/
+
+https://pixabay.com/es/photos/agente-negocio-llamada-centrar-18762/
+
+
+EMOJICS
+https://www.w3schools.com/charsets/ref_emoji.asp
+libros
+&#128218; 
+
+
+
+Javascript Single Page Application (SPA) con Javascript, HTML y CSS
+https://www.youtube.com/watch?v=D9avX-jtIPM
+
+Para rutas js usar document.location='#/vibracion';
+
+Tarea quitar la columna de las abreviaturas de wPAPAx y de wPapaX
+
+Para hacer siluetas:
+1ro con paint https://mspaint.humanhead.com/#local:86c69b886c24c
+2do quitar fondo https://www.remove.bg/es/upload
+3ro mezclarlo con fondo gris
+4to descargarlo
+
+
+NOTA Las variables posD, dedoL y leeme, junto con la función decirlo() se ocultan porque aquí gracias a los botones en relieve no se necesita decir donde están.
+
+
+problemas:
+
+1) poner fijos los 6 botones, cuando alguno/s no este/n en servicio sonar largo, 2 veces seguidas y vibrar largo, dos vibraciones seguidas, y poner el borde gris con el fondo transparente.
+
+
+2023:
+https://www.thinkwithgoogle.com/intl/es-419/futuro-del-marketing/gestion-y-cultura/diversidad-e-inclusion/como-sitio-web-accesible-todos/
+
+https://caracol.com.co/2023/02/16/madres-de-ninos-sordomudos-realizan-planton-por-falta-de-interpretes-para-sus-hijos/
+La directora de Inclusión de la Secretaría de Educación, Virginia Torres, se va a reunir con representantes de la comunidad sordomuda para buscar una solución a este problema.
+
+https://www.infobae.com/colombia/2023/02/16/hay-deficit-de-interpretes-para-estudiantes-sordos-en-colegios-publicos-en-bogota/
+La denuncia la dio a conocer Noticias RCN, que a través de dos madres de Colegio Distrital San Carlos I.E.D. Sede B, dieron cuenta de que la falta de intérpretes es una constante año a año,
+
+https://www.educacionbogota.edu.co/portal_institucional/nuestra-entidad/organigrama/direcci%C3%B3n-de-inclusion-e-integracion-de-poblaciones
+DIRECCIÓN DE INCLUSIÓN E INTEGRACIÓN DE POBLACIONES - Virginia Torres Montoya
+
+IMAGENES DESDE DRIVE:
+http://drive.google.com/uc?export=view&id=[Aquí el id de la imagen comprtida al público]
+https://tecnoapuntes.com/tutoriales/tics/google/insertar-imagenes-desde-google-drive-en-una-pagina-web/#:~:text=Con%20este%20sencillo%20truco%20puedes,sea%20P%C3%BAblico%20en%20la%20web.
+
+
+https://drive.google.com/file/d/1EDIFa8PtXKH4SnhuznYuGvfvU4iD3ALZ/view?usp=sharing
+
+
+
+
+Al dar click sobre el botón arriba, abajo y hola de entrada accesible debería activarse el audio y el vibrador, así como sucede con al dar click en los botones fijos 
+
+reload
+https://www.w3schools.com/jsref/met_loc_reload.asp
+
+https://accessibe.com
+
+PENDIENTE ANALIZAR SI REPROGRAMAR f0047() el boton de retroceso/cancelar para que no vuelva al menu? y a cambio "regrese" del "continuar" de los anuncios (ruta3) y preguntas frecuentes(ruta8)?
+
+
+DOC BUENO DE ACCESIBILIDAD:
+https://sid-inico.usal.es/idocs/F8/8.1-5999/Parte%20I/cap_1.htm#:~:text=1.1
+
+
+Cambio en el botón de menú, siempre visible menos en al inicio que debe mostrar "entrada accesible" y esperar la selección que haga el usuario
+Info debe informar Ventana: Entrada accesible o Anuncios o Estilo o Titulares o Tutorial o Video llamada o Mapa, etc..
+Para cambiar de ventana debe oprimir el botón cuadrado de menú/Servicio?
+En anuncios, habilitar el botón diagonal para poder regresar entre las páginas hasta el titular.
+Si la ventana de anuncios u otra ventana queda sin actividad, debe saltar a la ventana "titulares".
+Y la Ruta de Menú dejarla como ventana final de "indice" donde se muestren todas las "ventanas" disponibles y actue como "puente" entre ellas 
+
+
+En info adicionar textos de ayuda dependiendo de la ruta padre, que oriente al usuario de lo que puede hacer hay en esa ruta, ejemplo en Entrada accesible: 
+
+Arriba. , seleccionar la forma de acceder a la información
+
+Anuncios - Arriba. Objetivo, publicar los anuncios de la comunidad
+
+Para cambiar un campo especifico usar..
+v02 += ' class="zTxtL"';//Adicionar estilo como id
+colTxtL = document.getElementsByClassName("zTxtL");//prueba
+colTxtL[1].innerHTML = 'Hola mundo!'
+
+https://gist.github.com/hiepxanh/de602287ed95fca39a25723297a7dd12
+
+
+Leer para ver si arreglo la voz:
+https://dev.to/jankapunkt/cross-browser-speech-synthesis-the-hard-way-and-the-easy-way-353 ::
+Desde consola:
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.speak(
+    new SpeechSynthesisUtterance('Hello, world!')
+  )
+}
+// assume voices are loaded, see previous section
+const getVoicebyLang = lang => speechSynthesis
+  .getVoices()
+  .find(voice => voice.startsWith(lang))
+
+const german = getVoicebyLang('de')
+
+
+En titulares deja la primera parte de los anuncios, en anuncios al dar clic en cada botón/anuncio, debe dar más información del anuncio y cambiar de contenido de ese mismo botón/anuncio más no el contenido de los otros botones/anuncios, pueden haber todo el contenido que se quiera, y cuando se termine la información de ese botón/anuncio debe reiniciar desde el titular de ese mismo anuncio, similar al cambio de estilo del color del marco, que puede cambiar varias veces con cada clik y volver a reiniciar el contenido desde el comienzo, si el usuario se sale con flecha arriba o abajo hacia otro anuncio/botón, se debe reiniciar ese anuncio/botón y dejar el titular de primeras en ese anuncio/botón.
+
+Los titulares con el tiempo se deben poder adecuar al tipo de acceso que haya seleccionado el usuario, por defecto estarian saliendo tipo acceso "público", hay que crear los otros titulares que falten por ejemplo sacar la versión morse, braille, texto máximo, etc.
+
+ideas de publicaciones:
+https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/caminata-presencial-en-ciudad-bolivar-el-domingo-29-de-enero-de-2023
+
+
+En mi opinión hay varios pendientes, ver cuales priorizar o no:
+-Botón info no encuentra el interprete y genera error, seña error  - f29 f88 ..f22 ..f24 f93 f78 f87 f89 f25 f26
+
+
+Bien -- f29 f88 ..f24 f93 f78 f50 f45 f16 f90 f1
+f29 :: ORGANIZAR 1 pulso limpio de onfocus, ACTUALIZAR variable del foco <= La casilla (val) de la RUTA acaba de recibir el foco
+f88 :: ESPERAR un segundo y verificar que no exista un nuevo evento FOCUS para tomar ACCIONES 
+f85 :: anima las señas
+Nota: encontre que lLINES sigue activo con código HTML como si la ruta aún se estuviese mosrando, por eso es el error y no encuentra las señas, solo deberían haber 2 señas
+s se hace lLINES.innerHTML='' se soluciona el error, ver cómo se quita
+
+hay que mirar porque cuando sucede f22 de maximizar.. no permite a f29 ni f88
+indef.js:3541 Uncaught TypeError: Cannot read properties of undefined (reading 'undefined')
+    at f0085 (indef.js:3541:27)
+    y si hay una notificación en curso, adicionarla al string por ejemplo "...+ maximizar la pantalla desde el propio navegador +..."
+
+-Falta cuadrar bien yKEYS para que quede bien el permiso de oprimir un botón desde teclado físico
+
+-interrupción incluyente: sonido/vibración corto/a y suave o largo/a y fuerte.
+
+-Hacer que el eje de las señas se localice en la mitad de las barreras laterales para que no moleste a la vista.
+
+-En info adicionar: ...+
+Entrada accesible: sin seleccionar / modo seleccionado
+Lector de pantalla: habilitado/ deshabilitado
+Teclado físico: deshabilitado/ habilitado
+Lector de pantalla y5 teclado físico: habilitados/ deshabilitados
+En menú antes de pantalla informativa:
+Descansar: Pantalla negra con timbres de notificación y alertas. (por defecto al pasar tiempo se debe activar este modo y no pantalla info)
++...
+
+-En las señas crear bordes superiores e inferiores para poner marquesinas y permitan que el texto del botón, cuando el foco este sobre ese botón, adquiera movimiento horizontal y se pueda leer leer sin problema y sin necesidad de hacer scroll en la pantalla, y sirva en una sala o estación de bus.
+
+-En estilo crear botón "marquesina habilitada/deshabilitada, cambiar"
+
+-Arreglar el tamaño de las señas para que entren sin problema las marquesinas
+
+-En pantalla mini al terminar la presentacion AV se queda en blanco la pantalla
+
+-En pantalla mini no funciona la tecla 4 ni 9
+
+-Si no se minimiza la ventana con un gesto del usuario, entonces no se puede luego maximizar con el click sobre la ventana???, si es asi generar una pantalla de minimizar y luego maximizar? como solucionar esto? conservar y analizar las versiones anteriores y ver si se presenta este mismo problema.
+
+si document.fullscreen = true o document.fullscreenElement != null no permita que espere un click de maximizar porque no funcionara? poner mensaje de favor maximizar la ventana desde el navegador? o minimizar la ventana primero y esperar un segundo para luego si maximizarla?
+
+con esc no se presenta esa falla con la x del navegador si se presenta la falla con esc document.fullscreen vuelve a ser falsa!
+
+vi que si document.fullscreen = false o document.fullscreenElement = null si funciona maximizar pantalla
+
+leer:
+
+https://es.stackoverflow.com/questions/305805/c%C3%B3mo-usar-correctamente-la-etiqueta-lang-en-html
+<p>Usted diría eso en chino como <span lang="zh-Hans">中国科学院文献情报中心</span>.</p>
+<p>This is a paragraph.</p>
+<p lang="fr">Ceci est un paragraphe. merci</p>
+<p lang="zh-Hans">中国科学院文献情报中心</p>
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
+
+https://www.manualweb.net/html5/fullscreen-api/
+
+https://codepen.io/zerospree/details/NWoxaQ
+
+https://www.google.com/search?q=fullscreenElement+restart&ei=jtPAY8qMFJzekvQP5KKniAw&ved=0ahUKEwjKi9rg0MP8AhUcr4QIHWTRCcEQ4dUDCA8&uact=5&oq=fullscreenElement+restart&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABOgoIABBHENYEELADOgUIABCABDoECAAQHjoJCAAQBRAeEPEEOgYIABAFEB46BggAEBYQHkoECEEYAEoECEYYAFC7Dli6JGCUMGgBcAF4AIABwgaIAfgVkgENMC4yLjIuMi4xLjAuMZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp
+
+
+-Poner una pantalla capa oscura 50% bloqueante por pantalla minimizada, se quita al dar un clic, la pantalla debe volverse timbre durante 1 segundo para informar el hecho y quitar la capa oscura, el hecho se informa al usuario en info si no ha pasado mas de un minuto.. "notificaciones(por timbre): la pantalla se maximizó".
+
+-En info: ...+
+Entrada accesible: sin seleccionar / modo seleccionado
+Lector de pantalla: habilitado/ deshabilitado
+Teclado físico: deshabilitado/ habilitado
+Lector de pantalla y teclado físico: habilitados/ deshabilitados
+
+-En menú antes de pantalla informativa:
+Descansar: Pantalla negra con timbres de notificación y alertas. (por defecto al pasar tiempo se debe activar este modo y no pantalla info)
+
+-Antes de bloque de mayusculas..., anunciar si audio, vibrador, boton cuadrado y botón diagonal estan activados.Después adicionar cómo están los botones y su uso.. Botones de navegación ubicados en la pantalla desde arriba hacia abajo, 3 botones al lado izquierdo, el botón cuadrado de menú, el botón diagonal para cancelar o salir y el botón flecha arriba para subir; y 3 botones al lado derecho, el botón vertical de info, el botón redondo para aceptar o entrar y el botón flecha abajo para bajar. Si tienes un teclado fisico activa el botón de capslock para activar los botones de navegación, el botón cuadrado es el 7 o la ve pequeña, botón diagonal es el 4 o la ce, botón flecha arriba es el 1 o la exis, el botón vertical es el 9 o la ene, el botón redondo es el 6, la eme o el espacio, y el botón flecha abajo es el 3, la coma o el tabulador.
+
+-Mirar string en ingles vs español..
+i1, You are on:  accessible entry. Parent path: menu. 
+ -*-Caps lock on.Element: 2 of 10. Hour: 20:45.
+
+<span>Estás en: entrada accesible. <br>Ruta padre: menú. 
+-*-<br>Elemento: 2 de 10. <br>Hora: <span class="cLTR">21:08</span>. <br>Bloque de mayúsculas activado.En pantalla hay 6 botones..</span>
+
+-A causa del foco, si se toca en el celu cualquiera de los relieves o las barreras donde no hay botones, deja de funcionar el audio durante ese clic, en la pc no pasa eso hay que revizar, parece ser que ontouchstart se activa desde una pantalla touch y se come el audio, puede ser esto porque el foco anda perdido? revizar
+puede ser por bNoSo???
+ 
+-Sugerir poner 6 marcas laterales con esmalte de uñas en forma de puntos claves que permitan cierto relieve y sirvan para orientar la posición de los botones grandes a los ciegos.
+
+-Verificar las 6 Teclas físicas (xcv/nm, hueco con la b) y las 6 adicionales de braille (sdf/jkl espacio con la g y la h)
+
+-Crear botón de Marquesina informativa (local o internacional), similar a pantalla informativa pero con solo un string de texto e imagenes y con lengua de señas a un costado.
+-Cuadrar la altura de la fila señas
+-Crear botón: Braille de derecha a izquierda, cambiar /Braille de izquierda a derecha, cambiar
+-En info cuando capslock este activo informar al final que letras del teclado son los respectivos botones dependiendo del idioma por ej teclado español e ingles: xcvnm y ,.
+-Posponer los mensajes importantes(alertas) y las notificaciones(timbres) para cuando la app ya se este vendiendo.
+
+-Analizar si quitar o no el botón aceptar en pantalla informativa, ver porque al oprimir cualquier tecla con CapsLock inactivo se quita la presentación y si esta activo capslock solo con 6 o 9 se cancela la presentación.
+-Subir código a github.
+-Adicionar a info: botones disponibles arriba, abajo, cuadrado,
+redondo, diagonal y vertical.
+-Crear ventana de servicio en construcción.
+-Cambiar la fuente por una que la m salga más anchita y 1.0 no quede
+tan separado, ver si la de Platzi funciona mejor, en el compu sale una fuente con la m bien, creo que es Roboto, pero la fuente es distinta del celu.
+-Ver si achicar un pixel el texto mínimo o reducir espacio entre letras para que entre más texto en pantalla.
+-En texto mínimo o pequeño si la pantalla está horizontal, dejar
+espacios vacíos laterales de los textos de las listas para mejorar la
+lectura.
+-Hacer que con cada click si la pantalla está minimizada, se maximice
+la pantalla y quitar la alerta por este concepto.
+-Crear función para invertir el braille y poderlo punzar sobre una hoja física.
+
+-En Info debe salir dentro del mensaje si la ventana esta minimizada o no(quitar esto si con cada click se maximiza?)
+-Pantalla informativa: ajustar el texto para que salga lo más completo posible y la velocidad de las marquesinas
+-Pantalla informativa: adicionar 2 imagenes más al fondo de cada anuncio y hacer que conmuten cada 5 segundos
+-Quitar las alertas de pantalla minimizada
+-En vez de alertas generar notificaciones importantes que sean temporales por ejemplo de 1 minuto max, con opción de poder cancelarse despues de transcurridos 30 segundos y ya haya sido reproducida con voz mediante el lector de pantalla.
+-Generar "timbre largo" blanco/negro con sonido durante 5 segundos y vibración larga antes de recibir las notificaciones importantes.
+-Generar "timbre corto" color usuario/negro con sonido durante 3 segundos y vibración semi-larga sin texto/notificación indicando que algo paso y el usuario debe estar notificado, la notificación puede ser consultada luego al dar clic en el botón vertical de info.
+-Organizar la parte de mongo DB para que los arrays de datos se trabajen como archivos JSON y puedan ser trabajados/cargados desde un servidor en línea desde internet.
+-Cambiar los archivos de ejemplo por unos anuncios de la pagina web de la alcaldía de chapinero.
+-Cambiar las imagenes del alfabeto LSC por imagenes donde salgan caras y manos completas, hacer las imagenes pendientes de Milena Medelevil.
+-Crear una notificación importante(blanco y negro durante 5 segs) que se active despues de 5 minutos de iniciar la app a modo de ejemplo y tambien de una notificación no importante(color y negro durante 3 segs)
+-Verificar que otros pendientes pueden haber en los apuntes del 2022:
+
+
+
+
+
+
+
+KB4 Y KC1 (TECLADO FISICO), LOS DEDOS 1 Y 4 DEL TECLADO BRAILLE, que corresponden a la teclas de subir y bajar(1 es KB4 y 3 es KC1) ESTAN CRUZADOS PORQUE AL ESCRIBIR EN BRAILLE HAY QUE DAR VUELTA A LA PANTALLA Y LOS NUMEROS DE LA DERECHA PASAN A LA IZQUIERDA Y VISEVERSA 
+
+
+QUITAR LA PRIMER ALERTA DE PANTALLA MINIMIZADA Y CAMBIARLA POR TEXTO EXTRA EN ENTRADA ACCESIBLE ..." y maximizar" ejemplo:
+Texto mínimo, acceder y maximizar
+
+crear en menú, botón de ayuda con ? y crear titulos tipo pregunta o textos claves que permitan respuestas detalladas, ejepmplo
+Teclado fisico como botones: Si está usando un teclado físico y  ... bla, bla ,bla ver kBoton[x][3]
+
+
+En menú de estilo:
+1)reiniciar: falta ajustar velocidad 1.0, deshabilitar fila de señas e i1 si estan activas
+
+PENDIENTE AL REINICIAR NO DEBE IR A ANUNCIOS SINO IR AL MENU DE ACCESO!!!
+
+EN INFO VER COMO ADICIONAR HTML EM EL PUNTO PARA QUE ADICIONE UN SALTO DE LINEA ej '.\n'
+
+1)galeria i animada sobre fondo negro
+
+
+
+para tonos de color use https://imagecolorpicker.com/en
+ej luz amarilla rgb(256,252,236)
+
+FALTA CUADRAR CONTROL VELOCIDAD DEL VIBRADOR Y LAS SEÑAS
+
+ACTIVAR el boton de reiniciar 
+
+REPRODUCTOR Tapa con Visor(Video,imagen,mapa, etc), interpretes, con 6 botones, texto 'reproducir, pausar, ' + Click: 'Bla, bla, bla'
+
+Info: Estas en (Reproductor/Player/lecteur + ) Mapa 1 + Persona Desaparecida Greta Thumberg + Anuncios, hora 11:11, botón 3 de 8
+
+
+
+
+
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+TAREAS URGENTES:: de MAS vendedor a MENOS vendedor
+
+Reemplazar marquee por:
+https://arianarubi.medium.com/c%C3%B3mo-hacer-una-animaci%C3%B3n-marquee-infinita-con-html-y-css-e4f1d1cd3652
+
+Platzi:
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -o-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+
+
+    -webkit-animation: marquee 10s linear infinite;
+    -moz-animation: marquee 10s linear infinite;
+    -o-animation: marquee 10s linear infinite;
+    -ms-animation: marquee 10s linear infinite;
+    animation: marquee 10s linear infinite;
+
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin-top: 0.25rem;
+    -webkit-order: 4;
+    order: 4;
+    padding: 0;
+    text-align: center;
+
+
+error: ventana i - alerta pantalla mini - menu - ventana i
+creo que puede ser 18  050 070 099 inteR iPreAV  162    161   108
+2763 el error de iPRESE no puede quedar vacia!!
+
+
+Error cuando se minimiza la pantalla info desde el navegador el sale error de * y el error no permite hacer click para maximizar la pantalla y el texto y visor no salen de buen tamaño durante la alerta:
+indef.js:3015 Uncaught (in promise) TypeError: Failed to execute 'exitFullscreen' on 'Document': Document not active
+    at f0070 (indef.js:3015:16)
+    at indef.js:1551:9
+Ya no sale el error pero sale pequeño el visor y la letra y no maximiza la pantalla
+
+Revizar todos los modos y ver que en alerta pantalla mini, el texto y visor grandes y al hacer click se maximise la pantalla
+
+
+ERROR al dar click sobre la barrera cuando esta en alerta pant.mini:
+indef.js:2163 Uncaught TypeError: Cannot read properties of undefined (reading 'focus')
+    at f0031 (indef.js:2163:39)
+    at f0074 (indef.js:2965:6)
+    at HTMLDivElement.onclick (index.html:818:53)
+La solución anterior debe ser usando f0074()?
+
+
+
+Cuando se da click fuera de la app, se pierde el foco y al volver a tocar con un click la barrera, debería recuperar el foco y al dar espacio funcione como click sobre el botón que tiene el foco!
+
+Cuando se minimiza la ventana por esc y queda bloqueada la orden de maxmimizar ventana (el zoom también queda bloqueado) desde los botones, se puede volver a recuperar la orden modificando el tamaño de la ventana, así también se habilita el zoom de la misma.
+
+
+
+Diana Silva
+Wilmer Andrés Maldonado, Alcaldía local de Chapinero
+Sacar el RUT con la actividad economica minimo un año
+
+korean sign language alphabet
+person who can't hear asking for directions | social experiment
+https://www.youtube.com/watch?v=yiVgDQd4qTk
+
+
+
+¿pórque al desactivarse la presentación AV por pantalla mini (resize) antes se ve la ruta 3 durante un segundo y luego si sale la alerta de p mini o eso sería normal que pase?
+
+CREAR luces: naranja, roja, violeta, azul, verde? 
+
+1-Ruta estilo Multimedia con YouTube : f0012() vMul
+
+2-Editar señas Intérprete
+
+3-Barrera Superior e inferior al iniciar -persona acceso
+
+4-Dividir en 2 (menú) y poner ejemplos: Anuncios (info comunitaria) + Casos (info general urgente/vital: se expone problema y luego se sugiere la solución por ejemplo ¿que hacer en caso de emergencia - Colegio de Juan David)
+
+5-Mirar funcionamiento del lector de pantalla
+
+6-Propuesta alcaldia chapi - hibrida?? - video??
+
+📢 #ChapiTeCuenta sobre la primera versión del🥳 #FestivalDeFestivales InterArtes, un proyecto de #PresupuestosParticipativos diseñado para ofrecer a la ciudadanía, lo mejor del 🎭 arte, la cultura y el patrimonio local con 3⃣ grandes eventos durante todo el mes de noviembre.
+
+Comienza el festival de festivales interartes en Chapinero, ¿qué es? y ¿de qué se trata? te lo contamos aquí, esto es Chapi te cuenta. 
+Es la primera versión del festival de festivales, iniciativa lograda gracias a los presupuestos participativos.
+Este proyecto busca aportar a la producción y creación de una oferta cultural, artística y patrimonial para la localidad. 
+Realizarmos una una serie de eventos y festivales que fortalescerán un circuíto cultural para los habitantes de los diferentes barrios de nuestra localidad en plazoletas entre otros.
+El Festival de festivales se desarrollará en 3 puntos estratégicos de la localidad, tejiendo una red cultural con las juntas de Acción Comunal; En las Moyas el 6 de Noviembre con aliados locales, Grupo Guarda Moyas, Colectivo barrios del mundo, Mujeres Expomoyas.
+Se realizará el festival cultural de música teatro y circo, en la quebrada Las Delicias el 20 de noviembre se presentarán Artistas por el ambiente y Galería Art; para esta feria se vinculará a la Red de Mujeres de Chapinero los artesanos y emprendimientos gastronómicos y en la Plazoleta de la Calle 85 el 25 de noviembre tenemos la feria de los Artesanos de la Zona Rosa como un proceso de apropiación cultural del distrito de este sector.
+Anímate a participar con tu parche de amigos o familia, recuerda que cuentas con Chapi te cuenta y tu cuentas con Chapinero.
+
+
+
+
+7-Si la pantalla es muy grande, cuadrar la velocidad de la presentación, esta debe ser mayor porque se pone lenta la carga, quizas por la cantidad de pixeles que debe dibujar.
+
+8-NO ESTA detectando los botones si estan habilitados por teclado para detectar el evento y poder interrumpir la presentacion AV
+
+
+9- incrementar velocidad de iwindow si ancho es mayor de 800 pixeles o más
+
+
+-Al iniciar y dar click sobre la barrera se genera error:
+indef.js:2269 Uncaught TypeError: Cannot read properties of undefined (reading 'focus')
+    at f0031 (indef.js:2269:39)
+    at f0074 (indef.js:3088:6)
+    at HTMLDivElement.onclick (index.html:818:53)
+f0031 @ indef.js:2269
+f0074 @ indef.js:3088
+onclick @ index.html:818
+
+-agrandar la barrera (sup e inf) en alertas
+
+-sonido de vibrador/zumbido al tocar la barrera?
+
+
+
+
+
+
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+
+TAREAS/MEJORAS/ERRORES PENDIENTES 2023 -TECNOPARQUE VERIFICAR/MEJORAR LA USABILIDAD Y COMPATIBILIDAD DE LA APP EN VARIOS DISPOITIVOS Y PLATAFORMAS::
+-OJO detener la funcion loop porque no para y sigue como si nada, se multiplica y genera que la velocidad de la marquesina aumente, además elWidth se multiplica tambien y se van guardando los diferentes anchos como si no se ubisen quitado ya los avisos anteriores!!
+
+-f170 es igual a f152 pórque??
+
+-Cuando va a la presentacion AV f0018() esta usando el tamaño de valor máximo (4) pormedio de f0068(2) pero no se si este valor corresponda a la misma altura que tiene el visor de la presentación AV, tratar de comprobar si es igual, sino es igual hay que tratar de ajustar eso
+
+-Maximiza pantalla la primer vez (en mi compu) pero ya la segunda orden no la toma y no sale error, pórque??
+
+-En menú de estilo agregar un botón de "lengua de señas habilitada/deshabilitada, cambiar" similar a lector de pantalla habilitado/deshabilitado, cambiar- OJO CON ESTO!!! QUIZAS NO SEA ACONSEJABLE!!!, luego de analizar pienso que el usuario no debería poder realizar combinaciones entre SEÑAS, MORSE y BRAILLE, además puede afectar gravemente el desempeño tanto visual, cómo de la velocidad de carga de la información!!! - - creo que es mejor dejarlo así cómo está - -
+
+-Pensar si el botón i0/i1 del menú de configuración debe pasarse de ultimó al menú de estilo, dejar en ajustes todo los controles que afecten directamente el tipo contenido de lo que sale en pantalla, por ejemplo idioma/filtros, etc.., NO EL ESTILO, es decir la parte gráfica, color/tamaño, y todos los objetos VISUALES habilitados/deshabilitador para "verse", la pregunta es i0 es un "objeto Visual"??? si es así debería irse a estilo???
+
+-La columna 29 del control de estilo (tutorial de estilo) esta oculto, ver si se activa y reordenar todos los controles paara que no queden columnas sin hacer nada
+
+-Pienso que al hacer click sobre algún botón del hueco debería sonar click tamnbién igual que en los 6 botones laterales
+
+-El botón i Info en ambi 4 (presentación AV) no abre la tapa info sólo retorna a la Ruta Comunitaria al igual que Aceptar, el espacio ni el tabulador funcionan en modo 4, los unicos botones que estan habilitados si BloqMayus  esta activo son 6 y 9 de Info y Aceptar, revizar y mejorar esto
+
+-VER QUE f0093() este trabajando bien, que registre cuando hay un evento click sobre la pantalla y cuando es un evento sobre el teclado! me esta generando error con BloqMayus y sonar el pito, click porque aún no hay interacción: [[indef.js:3057 Uncaught (in promise) DOMException: play() failed because the user didn't interact with the document first. https://goo.gl/xX8pDD]]
+
+-El click de OK en alerta en minimizada, maximiza sólo la primer vez, las otras veces no maximiza la ventana
+
+-Hacer que al pasar el mouse por la parte del roto superior e inferior o (barrera sup e inferior) suba o baje la pantalla lentamente como si el usuario haga scroll.
+
+-Tarea f0024 boton info, no esta actuando bien, al oprimir i de alerta deberia repetir la alerta igual que en la tapa info
+
+-OJO con yProsax: g00VARS[50][2] en f0080() hace algo????
+
+-En una Tapa info deben aparecer los botones up, down, cancel y menu 
+
+-f0020 es similar a f0076??? se quita f20??? 
+
+-indef.js:2270 Uncaught TypeError: Cannot read properties of undefined (reading 'focus')
+    at f0031 (indef.js:2270:39)
+    at indef.js:1357:10
+
+-quitar f0014(ale) y reemplazarlo por f0016(ale)
+
+-se puede quitar f0030() de f0088()?? - la tengo comentada y parece que sigue funcionando bien.. revizar!!
+
+-porqué la constante de tiempo: f0009() y g00VARS[48](0-2)
+indet.js:352 - Mission: -ACTUALIZAR cada constante de tiempo morse según la constante de velocidad morse actual
+se repite a la par con cada:
+MORSE va a finalizarse ...
+No deberia ser solo una vez???
+
+-analizar si con ambi se puede quitar/remplazar a g00VARS[26][2]
+
+-quitar 30 de 31??? 31 da orden de enfocar, 29 actua por onfocus y 30 esta implicita, por ello pienso que quitarla de 31
+
+-cuando se pasa de tapa info a ruta, la f0017 se carga 2 veces y luego otra más es decir = 3 veces en vez de una: Quite un error (=>2 veces) falta quitar otro para que quede bien
+
+-en f0074 g00VARS[64] visor tamaño puede cambiar buscar que no se recalcule todas las variables en f0067 
+
+-f0027() se llama muchas veces, es de sonido, ojo con esto!!
+
+-f0067() cada vez que se da 1 o 3 y luego 9 o viceversa se activa, esto no debe pasar solo cuando hay resize!!
+
+- En Ruta cada vez que se da 9 el audio se corta "es.." debería salir "esto es.." al dar de nuevo 9 se corrige, porque pasa esto??
+
+-f0046() no debe activarse cada vez que se hace scroll, mirar porque ocurre esto!
+descubrí que 46 se ejecuta 11 veces en la ruta 7 cada vez que f0012() se llama, ver porque f0012 se llama tanto y revizarla
+
+-f0031() necesita estar en una ruta para poder encontrar form y posicionar el foco, si form no esta genera error porque no puede posicionar el foco [indef.js:1873 Uncaught TypeError: Cannot read properties of undefined (reading 'focus')] para producirlo reiniciar sin touch
+
+-f0043() necesita verificar que exista un primer toque o interacción para que no generé error [indef.js:2189 [Intervention] Blocked call to navigator.vibrate because user hasn't tapped on the frame or any embedded frame yet: https://www.chromestatus.com/feature/5644273861001216.]
+
+-Extraño "roto y segus" - - porqué se necesita a f0017 como botón final que "no hace nada"?, dentro de una Ruta?
+NOTA: DESCUBRÍ QUE la funcion setTimeout "segus" cuando tiene muchos milisegundos por ej 50000 nunca llega a realizarse si ocurre un evento de onfocus!! o tambien por una interrupción de roto?? es como si luego de hacer onfocus sobre un botón HTML y luego este botón se desaparece porque por un evento onclick se cambio la Ruta y por ende el HTML, entonces la tarea asincrona de onfocus nunca logra terminarse!! será por eso?? cuando se hace f0017 se recarga el HTML y cómo que resetea por decirlo de alguna manera las tareas pendientes/asincronas de los onfocus previos, será ese el misterio?? falta resolver.. roto se dejo comentado por si se quiere seguir probando, con onfocus largo 50000, la vibración y la lectura del botón actual se demoran mucho en cargar tal y como se espera.
+
+-Cuando este en pantalla minimizada y pase cierto tiempo, permitir que se active la presentación AV
+
+-EN PRESENTACION AV los eventos desde el teclado no los toma, por ejemplo TAB, 1, 3, etc, uno que otro si los toma 5,6 Y 8,9 (LOS UNICOS BOTONES VISIBLES!! DEJARLO ASI???)
+
+-AL INICIAR CON pantalla minimizada y dar Bloq Mayús para activar/desactivar botones del teclado físico, error por consola::
+[Caps lock is on] - Teclado activado
+indef.js:1662 Uncaught (in promise) TypeError: fullscreen error
+    at f0022 (indef.js:1662:12)
+    at f0093 (indef.js:3566:5)
+    at HTMLDocument.f0098 (indef.js:3782:4)
+
+-Verificar en cada ambiente el funcionamiento de Bloq Mayús para activar/desactivar botones del teclado físico
+
+-Al iniciar y tocar una tecla ESC,shift ctrl, etc, con TAB, Espacio, las letras y los números no pasa eso y maximiza -> error de Maximizar Pantalla por no haber interactuado antes (Si este error sucede no se puede maximizar después desde JS, toca desde el navegador) + error del play del clic:
+	--indef.js:3177 Uncaught (in promise) DOMException: play() failed because the user didn't interact with the document first.
+
+-El alto del la fila de señas no cuadra con el alto de la pantalla, es mas grande, ve ver si eso es normal que pase.
+
+-Verificar que cada vez que se repita info se debe reiniciar las señas
+
+-A const i556 detenerla cuando no existan señas.
+
+-Sitio web seguro CERTIFICADO DE SEGURIDAD
+https://youtu.be/lf1_G9i56es
+Cómo crear una PÁGINA WEB PASO A PASO ▶︎ PROFESIONAL 📈 & SEGURA 🔒 ▶︎ Curso Completo Gratis ✅
+
+-Reemplazar: if((g00VARS[27][2] > 1)&&(g00VARS[5][2]))//Si no es el idioma ingles y esta i1..
+Por sólo: if(g00VARS[5][2])//Si esta i1..
+
+-Habilitar tecla ESPACIO para la primer interacción desde el teclado, si Bloq Mayus esta activo hacer caso omiso de los botones habilitados?
+
+-IDEA: Mapas y Codes (Qr y Visual LENS) acompañen las Alertas o los Anuncios (Ejemplo bienvenido a TPC)???
+
+
+
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+
+_______________________________________________
+
+DOCUMENTO GUÍA
+buenas prácticas En la atención a personas con discapacidad
+https://www.siis.net/documentos/ficha/199384.pdf
+
+COMUNICACIÓN EFECTIVA
+https://www.ifbscalidad.eus/es/practicas/personas-con-discapacidad/comunicacion-efectiva/ma-1-6-37/
+
+COMUNICACION
+COMUNICACIÓN TOTAL: APROVECHAR LA DIVERSIDAD COMUNICATIVA:
+https://www.ifbscalidad.eus/es/practicas/personas-con-discapacidad/practica/pr-185/#
+
+COMUNICACIÓN TOTAL: APROVECHAR LA DIVERSIDAD COMUNICATIVA
+Comunicación preverbal y/o preintencional: Enfoques sensoriales y creativos
+https://www.ifbscalidad.eus/es/practicas/personas-con-discapacidad/practica/pr-187/
+
+COMUNICACIÓN TOTAL: APROVECHAR LA DIVERSIDAD COMUNICATIVA Comunicación aumentativa y alternativa
+https://www.ifbscalidad.eus/es/practicas/personas-con-discapacidad/practica/pr-186/
+
+COMUNICACIÓN TOTAL: APROVECHAR LA DIVERSIDAD COMUNICATIVA
+Comunicación verbal: lenguaje hablado y escrito accesibles
+https://www.ifbscalidad.eus/es/practicas/personas-con-discapacidad/practica/pr-188/
+
+
+TEORIA
+Valores de retorno en funciones Javascript:
+https://desarrolloweb.com/articulos/586.php
+
+PROGRAMACION
+https://www.youtube.com/c/midudev
+Los 7 MEJORES LIBROS para APRENDER y DOMINAR JAVASCRIPT [GRATIS!
+https://youtu.be/Rtqvnl02Zcs
+
+SISCO servidores???
+
+
+
+ERRORES TIPICOS - Aprendizaje
+-CORRIENDO NO PUEDE HABER NINGUN ESTILO z70 EN EL HTML ERROR EN f0085 (READING 'UNDEFINED') ya que colLife7.length debe ser igual a la longitud de g00VARS[1] siempre!!!
+-Para el manejo de errores en js https://www.w3schools.com/js/js_errors.asp
+
+
+
+APRENDER JS
+Existen muchísimos recursos para aprender Javascript pero algunos están desactualizados o el contenido no es tan bueno como uno espera. Aquí tienes 7 libros 📖 recomendados, verificados y actualizados para aprender y dominar Javascript. 🔝
+https://www.youtube.com/midulive
+https://youtu.be/Rtqvnl02Zcs
+
+1
+https://web-engineering.info/JsFrontendApp-Book
+
+2
+https://exploringjs.com/impatient-js/toc.html
+
+3
+https://eloquentjavascript.net/
+
+4
+https://read.humanjavascript.com/
+
+5
+https://www.patterns.dev/posts/classic-design-patterns/
+
+6
+https://javascript.info/
+https://es.javascript.info/
+
+7
+https://github.com/getify/You-Dont-Know-JS/tree/1st-ed
+https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed
+https://github.com/You-Dont-Know-JS-ES/Traduccion
+
+8
+https://www.redseguridad.com/especialidades-tic/gestion-y-gobierno-ti/sistemas-de-notificacion-masiva-comunicacion-de-emergencia-rapida-y-sencilla_20210629.html
+
+9
+https://www.accesibles.org/notificaciones-accesibles-de-toma-de-medicamentos-remo/
+
+10
+https://www.accesibles.org/nueva-app-de-notificacion-y-transcripcion-voz-a-texto-de-google-para-dispositivos-android/
+
+11
+ayudas en ingles para entender los eventos del touch y el mouse.
+https://web.dev/mobile-touchandmouse/
+
+12
+https://www.accesibles.org/app-con-interpretes-que-te-ayudan-a-traducir-textos-text2sign/
+
+13
+https://www.xatakandroid.com/aplicaciones-android/accesibilidad-en-android-21-aplicaciones-para-personas-invidentes
+
+14
+https://www.visualfy.com/es/visualfy-app-centro-de-notificaciones/
+
+15
+http://accesibilidadweb.dlsi.ua.es/?menu=que-es-un-captcha-problemas-accesibilidad
+
+16
+https://sid-inico.usal.es/idocs/F8/FDO27110/Accesibilidad%20auditiva.pdf
+
+17
+https://www.madrid.es/UnidadesDescentralizadas/Calidad/LenguajeClaro/ComunicacionClara/Documentos/GuiaPracticaCClara.pdf
+
+
+http://aasi.com.co/#features
+
+https://www.osoigo.com/es/mayra-losada-me-llamo-mayra-losada-y-soy-una-persona-sorda-cuando-tendremos-un-sistema-de-salud-inclusivo-en-todos-los-sentidos-y-en-donde-todas-las-personas-colombianas-puedan-recibir-un-trato-y-atencion-por-igual-para-poder-tener-una-calidad-de-vida-digna.html
+
+https://www.facebook.com/profile.php?id=100008446519300
+Mayra Alejandra Losada Ortigoza
+
+
+
+Marquesinas:
+
+https://stackoverflow.com/questions/31951282/why-is-marquee-deprecated-and-what-is-the-best-alternative
+
+https://www.jqueryscript.net/demo/Text-Scrolling-Plugin-for-jQuery-Marquee/
+
+10 Best Marquee-like Content Scrolling Plugins In JavaScript (2022 Update)
+https://www.jqueryscript.net/blog/best-marquee-content-scrolling.html
+
+https://www.w3docs.com/snippets/css/how-to-have-the-marquee-effect-without-using-the-marquee-tag-with-css-javascript-and-jquery.html
+
+https://www.w3docs.com/tools/code-editor/2123
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-weight: 700;
+        height: 600vh;
+        background: #d66d75;
+        background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 50%);
+      }
+      .marquee {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+      }
+      .marquee .inner {
+        position: relative;
+        width: 100%;
+        display: flex;
+        color: white;
+        font-size: 8rem;
+      }
+      .marquee .inner > * {
+        white-space: nowrap;
+        padding: 0 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee">
+      <div class="inner">
+        <p>Hello world of humans vgh hvgh vghvghv hvgh hjv hvhvhhvhghv hg vghj vhjv ghj vjvgh vghj vghj vh fghj fghjf hjgf ghjf hvghj gh ghjg hj ghfhgj gh ghj ghjf hgj hgj  j gjgjghj ff ghj fhf h hfh ff   fghjfghjf fhgjf ghjf hjf hjf jhgfghjfhgj fuughj bj hkyjhkgjhghgh h hjg hjg fghfghjfghf hgftufh ghj gf dt fhhj hjk  ttftghjghjg gh ghj ghjg g j g jhg hjkgggy gjghjg j gjgjh ghjg jg fgjf g fhg fgh fj fjf uft ghfhgfghf tufty f fgh.</p>
+      </div>
+    </div>
+    <script>
+      function handleMarquee() {
+        const marquee = document.querySelectorAll('.marquee');
+        let speed = 4;
+        let lastScrollPos = 0;
+        let timer;
+        marquee.forEach(function(el) {
+          const container = el.querySelector('.inner');
+          const content = el.querySelector('.inner > *');
+          //Get total width
+          const elWidth = content.offsetWidth;
+          //Duplicate content
+          let clone = content.cloneNode(true);
+          container.appendChild(clone);
+          let progress = 1;
+          function loop() {
+            progress = progress - speed;
+            if(progress <= elWidth * -1) {
+              progress = 0;
+            }
+            container.style.transform = 'translateX(' + progress + 'px)';
+            container.style.transform += 'skewX(' + speed * 0.4 + 'deg)';
+            window.requestAnimationFrame(loop);
+          }
+          loop();
+        });
+        window.addEventListener('scroll', function() {
+          const maxScrollValue = 12;
+          const newScrollPos = window.scrollY;
+          let scrollValue = newScrollPos - lastScrollPos;
+          if(scrollValue > maxScrollValue) scrollValue = maxScrollValue;
+          else if(scrollValue < -maxScrollValue) scrollValue = -maxScrollValue;
+          speed = scrollValue;
+          clearTimeout(timer);
+          timer = setTimeout(handleSpeedClear, 10);
+        });
+        function handleSpeedClear() {
+          speed = 4;
+        }
+      };
+      handleMarquee();
+    </script>
+  </body>
+</html>
+
+
+
+FUNCION NUEVA DE f0142 QUE HAY QUE ACTUALIZAR EN EL FRONT END PARA QUE PUEDA UTILIZAR MONGO COMO BD:
+
+f0142=()=>//CONSULTAR a la base de datos por cierta collección Valida
+		{	lOG(142);
+			//BUSCANDO DATOS
+			r003A = res3A;
+			r003Z = res3Z;
+			r003B = res3B;
+			g00VARS[86][2]=2;//Buscando anuncios
+
+			//Aquí falta actualizar los strings de r003A y de tambien de los botones si esta en menu o ruta!!!
+			//ACTUALIZAR tablas wPAPAx y datos debido al cambio de rumbo desde el navegador, si no existen tablas las deja vacias y oculta los botones respectivos de los sitios y debe quedar esperando por la llegada de los anuncios
+
+			rumbi = '';
+			rumbo = nruta.split('/');//array de nruta separada con las barras inclinadas
+
+			console.log('|> Flag 142 -> 138');
+			f0138();//(*rumbo debe declararse primero) ACTUALIZAR tablas wPAPAx y datos debido al cambio de rumbo desde el navegador, si no existen tablas las deja vacias y oculta los botones respectivos de los sitios 
+			console.log('|> Flag 142 -> 125');
+			f0125(0);//ESTABLECER O ACTUALIZAR el string de los botones de los sitios.
+
+			//Actalizar el frontend con datos de busqueda
+			if(gRuta == 2)
+			{	if(gFoco > rumbo.length + 2)//gFoco es mayor que rumbo + 2
+				{	gFoco = rumbo.length + 2;
+				}
+				f0017();//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+				//f0017(1);//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+			}
+			if((gRuta == 3)||(gRuta == 4))
+			{	f0017();//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+				//f0017(1);//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+			}
+			console.log(' - - - rumbo=',rumbo);
+			rumbi = rumbo.join('i');//String de nruta separada con i'es
+			console.log(' - - - rumbi=',rumbi);
+			if(rumbi!=rumba)//Si no es igual a su pasado en el navegador
+			{	ncBD = ncBD + 1;//Nueva consulta a la BD
+				console.log(' - - - consulta ',ncBD,' a la base de datos con rumbi=',rumbi);
+
+				//INICIAR la consulta..
+				setTimeout(()=>//Reduce el conteo para activar la presentación
+				{	naBD = naBD + 1;//Actualiza el pasado de rumbi en la base de datos
+					if(naBD>ncBD)//Si las respuestas resultan mayores que las solicitudes
+					{  ncBD = naBD;//Iguala los dos valores para corregir ese error por si alguna vez sucede
+					}
+					if(naBD==ncBD)//Si el número de consulta no ha cambiado y es igual al número anterior de consulta a la base de datos entonces..
+					{	console.error(' - - - LA RESPUESTA esperada! son iguales! naBD=',naBD,' Y ncBD=',ncBD);
+
+						//INICIAR consulta a la base de datos y buscar si la ruta existe traer los anuncios para cargar r003 
+						let xhr = new XMLHttpRequest();//AJAX
+						//xhr.open("GET",'http://localhost:3000/'+nruta);
+						//xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+						xhr.responseType = "json";
+						//xhr.onreadystatechange = () =>//cuando readyState = 4
+						xhr.onload = () =>//s1 cuando readyState = 4
+						{	console.log('-  message sent from server:');
+							if ((xhr.readyState == 4)&&(xhr.status == 200))
+							{	data = xhr.response;//*colección xixixixix de los anuncios JSON
+								console.log('-- ready! status=',xhr.status,' and readyState=',xhr.readyState);//s2
+								console.log('-- server response (data) =',data);
+								r003A =[	['Casillas'	],
+										[1		,['Vacio']],
+										[2		,['Vacio']],
+										[3		,['Vacio']],
+										[4		,['Vacio']]
+										];
+								r003Z = [	['Casillas'	],
+										[1		,['Moving points']],
+										[2		,['Satélite en movimiento']],
+										[3		,['satellite en mouvement']],
+										[4		,['움직이는 위성']]
+								];
+								r003B =[		['Recursos/ Casillas..'										],//la D es de default cuando no hay ningun anuncio
+										['1 0:Imag,1:Icon,2:Texto,3ImagenA,4VideoA'					,[1]],
+										['2 id de la Imag, Icon o Texto'							,[82]],//82 83 54
+										['3 onclick function,vacio=NO PERMITIDA(INFO)/id"apuntador"',0],
+										['4 Visible 1:SI 0:no'										,1],
+										['5 0:FotI 1:Vide 2:FotM 3:Text 4:In 5:Out'					,[0]],
+										['6 id Video([5]1) o id foto([5]0/2)'						,[0]],
+										['7 id Texto Icono'											,[0]],
+										['8 ids Iconos Capa1'										,[0]],
+										['9 ids Iconos Capa2'										,[0]],
+										['10 Capa3 Estado 0: 1:/ 2:_ 3: ? 4: -'						,[0]]
+								];
+								//console.log(' typeof data =', typeof data);//string
+								//JSON.parse(data);//Convertir una cadena del JSON en un objeto, para ello se usa el metodo parse
+								let jsData = data;
+								console.log(' typeof jsData =', typeof jsData);//object
+								console.log(' .. jsData.length =', jsData.length);//234
+								for (var i = 0; i < jsData.length; i++)//Convertir el objeto JS en 3 arrays de r003
+								{	r003A[1][i+1]= jsData[i].r3A1;
+									r003A[2][i+1]= jsData[i].r3A2;
+									r003A[3][i+1]= jsData[i].r3A3;
+									r003A[4][i+1]= jsData[i].r3A4;
+									r003Z[1][i+1]= jsData[i].r3Z1;
+									r003Z[2][i+1]= jsData[i].r3Z2;
+									r003Z[3][i+1]= jsData[i].r3Z3;
+									r003Z[4][i+1]= jsData[i].r3Z4;
+									r003B[1][i+1]= jsData[i].r3B1;
+									r003B[2][i+1]= jsData[i].r3B2;
+									r003B[3][i+1]= jsData[i].r3B3;
+									r003B[4][i+1]= jsData[i].r3B4;
+									r003B[5][i+1]= jsData[i].r3B5;
+									r003B[6][i+1]= jsData[i].r3B6;
+									r003B[7][i+1]= jsData[i].r3B7;
+									r003B[8][i+1]= jsData[i].r3B8;
+									r003B[9][i+1]= jsData[i].r3B9;
+									r003B[10][i+1]= jsData[i].r3B10;
+								}
+								c003A = r003A;
+								c003Z = r003Z;
+								c003B = r003B;
+							
+							
+								/* SWITCH CON LA BASE DE DATOS */
+								if(data.length)//Bingo!
+								{	g00VARS[86][2]=0;
+									console.error('- rta SI hay anuncios -');
+								}
+								else// no hay información
+								{	g00VARS[86][2]=1;
+									console.error('- rta NO hay anuncios  -');
+								}
+								/**/
+							
+								/* SWITCH SIN LA BASE DE DATOS * /
+								if(nruta == '7/1/8/2/2')//Bingo!
+								{	g00VARS[86][2]=0;
+									f0140();//CARGAR anuncios en r003
+									console.error('  - 0 rta SI hay anuncios -');
+								}
+								else// no hay información
+								{	g00VARS[86][2]=1;
+									f0139();//CARGAR el anuncio vacio en r003
+									console.error(' - 1 rta NO hay anuncios -');
+								}
+								/**/
+							
+								f0138();//ACTUALIZAR tablas wPAPAx y datos debido al cambio de rumbo desde el navegador, si no existen tablas las deja vacias y oculta los botones respectivos de los sitios 
+								f0125(0);//ESTABLECER O ACTUALIZAR el string de los botones de los sitios.
+								//Actalizar el frontend con la respuesta de la busqueda
+								if(gRuta == 2)
+								{	if(gFoco > rumbo.length + 2)//gFoco es mayor que rumbo + 2
+									{	gFoco = rumbo.length + 2;
+									}
+									f0017();//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+									//f0017(1);//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+								}
+								if((gRuta == 3)||(gRuta == 4))
+								{	f0017();//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+									//f0017(1);//CARGAR los guiones de ruta y POSICIONAR el foco sobre la casilla actual
+								}
+							}
+							else
+							{	console.error('-- Error: status=',xhr.status,' and readyState=',xhr.readyState);//s2
+								//console.log('Error: ',xhr.status);//s1
+							}
+						};
+						xhr.open("GET",'http://localhost:3000/'+nruta);
+						//xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+						console.log('- send the query to the server...');
+						xhr.send();//Envía la solicitud al servidor
+					}
+					else//Si la solicitud ha cambiado
+					{	//No hace nada, aquí simplemente espera a que llegue la ultima solicitud donde rumbi = rumbd
+						console.error(' - - - RESPUESTA NO esperada! naBD=',naBD,' y ncBD=',ncBD);
+					}	
+				}			
+				,4000);//Demora de la respuesta
+			}
+			rumba = rumbi;//Actualiza el pasado de rumbi en el navegador
+		}
+
+
+
+
+
+
+CODIGO ANTERIOR DE CHAPINERO INDED.JS: 7i1i8i2i2
+
+let 	c003A		=[	['Casillas'		,1																																																																																																																																																																																																																																																																								,2																																																																												,3																																																																												,4																				,5																				,6],
+							[1			,['','here you can see the announcements published by local leaders, contact us: ilifebogota@gmail.com'				,'on this website you will find information accessible through seven modes'		,'Navigation, to navigate there are 6 navigation buttons, on the screen they go from top to bottom'		,'there are 3 buttons on the left side, the square menu button, the diagonal button to cancel or exit and the triangle button up to go up or back'					,'and on the right side there are 3 other buttons, the vertical quick information bar button, the round button to accept or enter and the down triangle button to go down or go forward'		,'To enable navigation buttons on a physical keyboard, turn on caps lock button'										,'square button is 7 or N, diagonal button is 4 or M, triangle up button is 1 or comma, the vertical bar button is 9 or V, the round button is 6, C or space, and the down triangle button is 3, X or tab']																				,['participate this Sunday, January 29, in an ecological walk in Ciudad Bolívar, IDRD, invites you'	,'Be part of our ecological walks, and discover places that will help you connect with nature.'							,'This Sunday the appointment is in Ciudad Bolívar, Casona and Sierra Morena'	]	,['Hike Ciudad Bolívar, Casona and Sierra Morena. Sunday, January 29, 9:00 a.m. to 11:00 a.m.'	,'Meeting point: In front of the Francisco José de Caldas District University, calle 68 bis A sur #49F-70'		,'Free registration, more information at www.idrd.gov.co and on our social networks' 		]	,['invitation to sports event, physical activity, blah, blah, blah, blah']		,['invitation to General Assembly, blah, blah, blah'	,'abece 1'	,'abece 2']	,['open calls by the ICT Ministry for university students, teachers, women, people with disabilities, companies and entrepreneurs in the country'								,'Those interested should enter the ministry\'s website www.mintic.gov.co to consult the details of each project and the closing of the calls.']					],
+							[2			,['','aquí podrás conocer los anuncios publicados por los líderes locales, contáctanos: ilifebogota@gmail.com'		,'en este sitio web encontrará información accesible a través de siete modos'	,'Navegación, para navegar hay 6 botones de navegación, en pantalla van desde arriba hacia abajo'		,'hay 3 botones al lado izquierdo, el botón cuadrado de menú, el botón diagonal para cancelar o salir y el botón de triángulo hacia arriba para subir o retroceder'	,'y al lado derecho hay otros 3 botones, el botón barra vertical de información rápida, el botón redondo para aceptar o ingresar y el botón de triángulo hacia abajo para ir abajo o avanzar'	,'Para habilitar los botones de navegación en un teclado físico, active el botón de bloqueo de mayúsculas'				,'el botón cuadrado es el 7 o la N, el botón diagonal es el 4 o la M, el botón de triángulo hacia arriba es el 1 o la coma, el botón barra vertical es el 9 o la V, el botón redondo es el 6, la C o el espacio, y el botón de triángulo hacia abajo es el 3, la X o el tabulador']		,['participa este domingo 29 de enero en una caminata ecológica en Ciudad Bolívar, IDRD, te invita'	,'Sé parte de nuestras caminatas ecológicas, y conoce lugares que te ayudarán a conectarte con la naturaleza.'			,'Este domingo la cita es en Ciudad Bolívar, Casona y Sierra Morena'			]	,['Caminata Ciudad Bolívar, Casona y Sierra Morena. Domingo 29 de enero, 9:00 a 11:00 a.m.'		,'Punto de encuentro: Frente a la Universidad Distrital Francisco José de Caldas, calle 68 bis A sur #49F-70'	,'Inscripción gratuita, mayor información en www.idrd.gov.co y en nuestras redes sociales'	] 	,['invitación a evento deportivo, actividad física, bla, bla, bla, bla']		,['invitación a Asamblea General, bla, bla, bla' 		,'abece 1'	,'abece 2']	,['convocatorias abiertas por el MinTIC para universitarios, docentes, mujeres, personas con discapacidad, empresas y emprendedores del país'									,'Los interesados deberán ingresar a la página web del ministerio www.mintic.gov.co a consultar los detalles de cada proyecto y los cierres de las convocatorias.']	],
+							[3			,['','ici vous pouvez voir les annonces publiées par les dirigeants locaux, contactez-nous: ilifebogota@gmail.com'	,"sur ce site vous trouverez des informations accessibles à travers sept modes"	,"Navigation, pour naviguer il y a 6 boutons de navigation, sur l'écran ils vont de haut en bas"		,"il y a 3 boutons sur le côté gauche, le bouton menu carré, le bouton diagonal pour annuler ou sortir et le bouton triangle haut pour monter ou dos"				,"et sur le côté droit il y a 3 autres boutons, le bouton barre d'information rapide verticale, le bouton rond pour accepter ou entrer et le bouton triangle bas pour descendre ou avancer"		,"Pour activer les boutons de navigation sur un clavier physique, activez le bouton de verrouillage des majuscules"		,"le bouton carré est 7 ou N, le bouton diagonal est 4 ou M, le bouton triangle vers le haut est 1 ou virgule, le bouton de la barre verticale est 9 ou V, le bouton rond est 6, C ou espace, et le bouton triangle vers le bas est 3, X ou tabulation"]								,['participez ce dimanche 29 janvier à une promenade écologique à Ciudad Bolívar, IDRD vous invite'	,'Faites partie de nos promenades écologiques et découvrez des lieux qui vous aideront à vous connecter avec la nature.','Ce dimanche, le rendez-vous est à Ciudad Bolívar, Casona et Sierra Morena'   	]	,["Randonnée Ciudad Bolívar, Casona et Sierra Morena. Dimanche 29 janvier de 9h00 à 11h00"		,"Point de rencontre : Devant l'Université du district Francisco José de Caldas, calle 68 bis A sur #49F-70"	,"Inscription gratuite, plus d'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	]	,['invitation à un événement sportif, activité physique, bla, bla, bla, bla']	,['invitation à l\'Assemblée générale, bla, bla, bla'	,'abece'	,'abece']	,['appels ouverts du ministère des TIC pour les étudiants universitaires, les enseignants, les femmes, les personnes handicapées, les entreprises et les entrepreneurs du pays'	,'Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels.']	],
+							[4			,['','여기에서 지역 지도자들이 게시한 공지 사항을 볼 수 있습니다. ilifebogota@gmail.com으로 문의하십시오.'								,"이 웹사이트에서 7가지 모드를 통해 액세스할 수 있는 정보를 찾을 수 있습니다"						,"탐색, 탐색을 위해 화면에서 위에서 아래로 이동하는 6개의 탐색 버튼이 있습니다."											,"왼쪽에는 사각형 메뉴 버튼, 취소 또는 종료를 위한 대각선 버튼, 위로 또는 뒤로 가기를 위한 위쪽 삼각형 버튼 3개의 버튼이 있습니다."																	,"오른쪽에는 3개의 다른 버튼이 있습니다. 세로 빠른 정보 표시줄 버튼, 수락 또는 입력을 위한 원형 버튼, 아래로 이동 또는 앞으로 이동을 위한 아래쪽 삼각형 버튼입니다."																	,"실제 키보드에서 탐색 버튼을 활성화하려면 Caps Lock 버튼을 켜십시오."																	,"사각형 버튼은 7 또는 N, 대각선 버튼은 4 또는 M, 삼각형 위쪽 버튼은 1 또는 쉼표, 세로 막대 버튼은 9 또는 V, 둥근 버튼은 6 , C 또는 스페이스, 아래쪽 삼각형 버튼은 3, X, 또는 탭"]																																			,['1월 29일 일요일, IDRD의 Ciudad Bolívar에서 열리는 생태 산책에 여러분을 초대합니다.'								,'생태 산책에 참여하고 자연과 연결하는 데 도움이 되는 장소를 발견하세요.'																	,'이번 일요일 약속은 Ciudad Bolívar, Casona 및 Sierra Morena에 있습니다.'   				]	,["Ciudad Bolívar, Casona 및 Sierra Morena를 하이킹하십시오. 1월 29일 일요일 오전 9시 ~ 오전 11시"			,"만남의 장소: Francisco José de Caldas District University 앞, calle 68 bis A sur #49F-70."						,"Inscription gratuite, plus d'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	]	,['스포츠 행사 초대, 신체 활동, 어쩌구 저쩌구 어쩌구 저쩌구']									,['총회 초대, 어쩌구 저쩌구'									,'abece'	,'abece']	,['국내 대학생, 교사, 여성, 장애인, 기업 및 기업가를 대상으로 정보통신부가 공개 모집'																												,'Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels.']	]
+						];
+
+
+let 	c003B		=[	['Recursos/ Casillas..'											,1								,2			,3			,4		,5			,6],
+							['1 0:Imag,1:Icon,2:Texto,3ImagenA,4VideoA'					,[3	,1	,3	,3	,3	,3	,3	,3]	,[3,1,3]	,[2,2,3] 	,[2]	,[2,1,1]	,[3,2]],
+							['2 id de la Imag, Icon o Texto'							,[31,3	,16	,12	,13	,8 	,9 ,10]	,[18,16,4]	,[33,35,5] 	,[31]	,[37,15,16]	,[3,36]],
+							['3 onclick function,vacio=NO PERMITIDA(INFO)/id"apuntador"',0					,0			,0 			,0		,0			,0],
+							['4 Visible 1:SI 0:no'										,1					,1			,1 			,1		,1			,1],
+							['5 0:FotI 1:Vide 2:FotM 3:Text 4:In 5:Out'					,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]],
+							['6 id Video([5]1) o id foto([5]0/2)'						,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]],
+							['7 id Texto Icono'											,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]],
+							['8 ids Iconos Capa1'										,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]],
+							['9 ids Iconos Capa2'										,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]],
+							['10 Capa3 Estado 0: 1:/ 2:_ 3: ? 4: -'						,[0,0,0,0,0,0,0,0]	,[0,0,0]	,[0,0,0] 	,[0]	,[0,0,0]	,[0,0]]
+						];
+
+
+
+
+
+
+const jAds = //*colección 7i1i8i2i2 de los anuncios JSON
+`[ 	
+	{
+		"iads": "7i1i8i2i2",
+		"r3A1": ["participate this Sunday, January 29, in an ecological walk in Ciudad Bolívar, IDRD, invites you"	,"Be part of our ecological walks, and discover places that will help you connect with nature."								,"This Sunday the appointment is in Ciudad Bolívar, Casona and Sierra Morena"	],
+		"r3A2": ["participa este domingo 29 de enero en una caminata ecológica en Ciudad Bolívar, IDRD, te invita"	,"Sé parte de nuestras caminatas ecológicas, y conoce lugares que te ayudarán a conectarte con la naturaleza."				,"Este domingo la cita es en Ciudad Bolívar, Casona y Sierra Morena"			],
+		"r3A3": ["participez ce dimanche 29 janvier à une promenade écologique à Ciudad Bolívar, IDRD vous invite"	,"Faites partie de nos promenades écologiques et découvrez des lieux qui vous aideront à vous connecter avec la nature."	,"Ce dimanche, le rendez-vous est à Ciudad Bolívar, Casona et Sierra Morena"   	],
+		"r3A4": ["1월 29일 일요일, IDRD의 Ciudad Bolívar에서 열리는 생태 산책에 여러분을 초대합니다."							,"생태 산책에 참여하고 자연과 연결하는 데 도움이 되는 장소를 발견하세요."																		,"이번 일요일 약속은 Ciudad Bolívar, Casona 및 Sierra Morena에 있습니다."   			],
+		"r3Z1":	["person walking up the mountain"			,"person walking up the mountain"	,"person walking up the mountain"	],
+		"r3Z2":	["persona caminando por la montaña"			,"persona caminando por la montaña"	,"persona caminando por la montaña"	],
+		"r3Z3":	["personne qui monte la montagne"			,"personne qui monte la montagne"	,"personne qui monte la montagne"	],
+		"r3Z4": ["산을 오르는 사람"								,"산을 오르는 사람"						,"산을 오르는 사람"						],
+		"r3B1": [3,1,3],
+		"r3B2": [18,16,4],
+		"r3B3": 0,
+		"r3B4": 1,
+		"r3B5": [0,0,0],
+		"r3B6": [0,0,0],
+		"r3B7": [0,0,0],
+		"r3B8": [0,0,0],
+		"r3B9": [0,0,0],
+		"r3B10": [0,0,0]
+	},
+	{
+		"iads": "7i1i8i2i2",
+		"r3A1": ["Hike Ciudad Bolívar, Casona and Sierra Morena. Sunday, January 29, 9:00 a.m. to 11:00 a.m."	,"Meeting point: In front of the Francisco José de Caldas District University, calle 68 bis A sur #49F-70"		,"Free registration, more information at www.idrd.gov.co and on our social networks" 		],
+		"r3A2": ["Caminata Ciudad Bolívar, Casona y Sierra Morena. Domingo 29 de enero, 9:00 a 11:00 a.m."		,"Punto de encuentro: Frente a la Universidad Distrital Francisco José de Caldas, calle 68 bis A sur #49F-70"	,"Inscripción gratuita, mayor información en www.idrd.gov.co y en nuestras redes sociales"	],
+		"r3A3": ["Randonnée Ciudad Bolívar, Casona et Sierra Morena. Dimanche 29 janvier de 9h00 à 11h00"		,"Point de rencontre: Devant l\'Université du district Francisco José de Caldas, calle 68 bis A sur #49F-70"	,"Inscription gratuite, plus d\'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	],
+		"r3A4": ["Ciudad Bolívar, Casona 및 Sierra Morena를 하이킹하십시오. 1월 29일 일요일 오전 9시 ~ 오전 11시"			,"만남의 장소: Francisco José de Caldas District University 앞, calle 68 bis A sur #49F-70."						,"Inscription gratuite, plus d\'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	],
+		"r3Z1":	["Hike Ciudad Bolívar, Casona and Sierra Morena. Sunday, January 29, 9:00 a.m. to 11:00 a.m."	," Meeting point: In front of the Francisco José de Caldas District University, calle 68 bis A sur #49F-70."	,"Free registration, more information at www.idrd.gov.co and on our social networks" 		],
+		"r3Z2":	["Caminata Ciudad Bolívar, Casona y Sierra Morena. Domingo 29 de enero, 9:00 a 11:00 a.m."		,"Punto de encuentro: Frente a la Universidad Distrital Francisco José de Caldas, calle 68 bis A sur #49F-70."	,"Inscripción gratuita, mayor información en www.idrd.gov.co y en nuestras redes sociales"	],
+		"r3Z3":	["Randonnée Ciudad Bolívar, Casona et Sierra Morena. Dimanche 29 janvier de 9h00 à 11h00"		," Point de rencontre: Devant l\'Université du district Francisco José de Caldas, calle 68 bis A sur #49F-70."	,"Inscription gratuite, plus d\'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	],
+		"r3Z4": ["Randonnée Ciudad Bolívar, Casona et Sierra Morena. Dimanche 29 janvier de 9h00 à 11h00"		," Point de rencontre: Devant l\'Université du district Francisco José de Caldas, calle 68 bis A sur #49F-70."	,"Inscription gratuite, plus d\'informations sur www.idrd.gov.co et sur nos réseaux sociaux"	],
+		"r3B1": [2,2,3],
+		"r3B2": [33,35,5],
+		"r3B3": 0,
+		"r3B4": 1,
+		"r3B5": [0,0,0],
+		"r3B6": [0,0,0],
+		"r3B7": [0,0,0],
+		"r3B8": [0,0,0],
+		"r3B9": [0,0,0],
+		"r3B10": [0,0,0] 
+	},
+	{
+		"iads": "7i1i8i2i2",
+		"r3A1": ["invitation to sports event, physical activity, blah, blah, blah, blah"],
+		"r3A2": ["invitación a evento deportivo, actividad física, bla, bla, bla, bla"],
+		"r3A3": ["invitation à un événement sportif, activité physique, bla, bla, bla, bla"],
+		"r3A4": ["스포츠 행사 초대, 신체 활동, 어쩌구 저쩌구 어쩌구 저쩌구"],
+		"r3Z1":	["invitation to sports event, physical activity, blah, blah, blah, blah"],
+		"r3Z2":	["invitación a evento deportivo, actividad física, bla, bla, bla, bla"],
+		"r3Z3":	["invitation à un événement sportif, activité physique, bla, bla, bla, bla"],
+		"r3Z4": ["invitation à un événement sportif, activité physique, bla, bla, bla, bla"],
+		"r3B1": [2],
+		"r3B2": [31],
+		"r3B3": 0,
+		"r3B4": 1,
+		"r3B5": [0],
+		"r3B6": [0],
+		"r3B7": [0],
+		"r3B8": [0],
+		"r3B9": [0],
+		"r3B10": [0]
+	},
+	{
+		"iads": "7i1i8i2i2",
+		"r3A1": ["invitation to General Assembly, blah, blah, blah"	,"abece 1"	,"abece 2"],
+		"r3A2": ["invitación a Asamblea General, bla, bla, bla" 		,"abece 1"	,"abece 2"],
+		"r3A3": ["invitation à l\'Assemblée générale, bla, bla, bla"	,"abece"	,"abece"],
+		"r3A4": ["총회 초대, 어쩌구 저쩌구"									,"abece"	,"abece"],
+		"r3Z1":	["invitation to General Assembly, blah, blah, blah, blah", "abece 1","abece 2"],
+		"r3Z2":	["invitación a Asamblea General, bla, bla, bla, bla" ,"abece 1","abece 2"],
+		"r3Z3":	["invitation à l\'Assemblée générale, bla, bla, bla, bla","abece","abece"],
+		"r3Z4": ["invitation à l\'Assemblée générale, bla, bla, bla, bla","abece","abece"],
+		"r3B1": [2,1,1],
+		"r3B2": [37,15,16],
+		"r3B3": 0,
+		"r3B4": 1,
+		"r3B5": [0,0,0],
+		"r3B6": [0,0,0],
+		"r3B7": [0,0,0],
+		"r3B8": [0,0,0],
+		"r3B9": [0,0,0],
+		"r3B10": [0,0,0]
+	},
+	{
+		"iads": "7i1i8i2i2",
+		"r3A1": ["open calls by the ICT Ministry for university students, teachers, women, people with disabilities, companies and entrepreneurs in the country"								,"Those interested should enter the ministry\'s website www.mintic.gov.co to consult the details of each project and the closing of the calls."],
+		"r3A2": ["convocatorias abiertas por el MinTIC para universitarios, docentes, mujeres, personas con discapacidad, empresas y emprendedores del país"									,"Los interesados deberán ingresar a la página web del ministerio www.mintic.gov.co a consultar los detalles de cada proyecto y los cierres de las convocatorias."],
+		"r3A3": ["appels ouverts du ministère des TIC pour les étudiants universitaires, les enseignants, les femmes, les personnes handicapées, les entreprises et les entrepreneurs du pays"	,"Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels."],
+		"r3A4": ["국내 대학생, 교사, 여성, 장애인, 기업 및 기업가를 대상으로 정보통신부가 공개 모집"																												,"Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels."],
+		"r3Z1":	["open calls by the ICT Ministry for university students, teachers, women, people with disabilities, companies and entrepreneurs in the country"								,"Those interested should enter the ministry\'s website www.mintic.gov.co to consult the details of each project and the closing of the calls."],
+		"r3Z2":	["convocatorias abiertas por el MinTIC para universitarios, docentes, mujeres, personas con discapacidad, empresas y emprendedores del país"									,"Los interesados deberán ingresar a la página web del ministerio www.mintic.gov.co a consultar los detalles de cada proyecto y los cierres de las convocatorias."],
+		"r3Z3":	["appels ouverts du ministère des TIC pour les étudiants universitaires, les enseignants, les femmes, les personnes handicapées, les entreprises et les entrepreneurs du pays"	,"Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels."],
+		"r3Z4": ["appels ouverts du ministère des TIC pour les étudiants universitaires, les enseignants, les femmes, les personnes handicapées, les entreprises et les entrepreneurs du pays"	,"Les personnes intéressées doivent entrer sur le site Web du ministère www.mintic.gov.co pour consulter les détails de chaque projet et la clôture des appels."],
+		"r3B1": [3,2],
+		"r3B2": [3,36],
+		"r3B3": 0,
+		"r3B4": 1,
+		"r3B5": [0,0],
+		"r3B6": [0,0],
+		"r3B7": [0,0],
+		"r3B8": [0,0],
+		"r3B9": [0,0],
+		"r3B10": [0,0]
+	}
+]`;

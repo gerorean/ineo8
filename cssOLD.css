@@ -1,0 +1,1133 @@
+/*!IMPORTANTS SHORT NAMES*/
+.cB{			background:blue!important}
+
+.cG{			background:green!important}
+
+.cR{			background:red!important}
+
+.cT{			color:transparent!important}
+
+/*.cT{			background:rgba(255,100,255,0.4)!important}/**/
+
+.cX{			display:none!important}
+
+.c0{			z-index:11111111!important}/*ACTIVAR cuando el servidor sea 000webhostapp.com (8unos), el del sena es 2000000000 (2 y 9ceros)*/
+
+
+
+
+/* Animación CSS para iOS a* /
+@keyframes vibrate {
+   0% { transform: translate(0); }
+   10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); }
+   20%, 40%, 60%, 80%, 100% { transform: translate(5px, -5px); }
+}
+
+.vibrate-ios {
+   animation: vibrate 0.3s linear infinite;
+}
+/*fin animación CSS para ios b*/
+
+
+
+
+
+
+/*VARIABLES*/
+#iBody{		--a:45px;/*45px;/*28.5px;/*  15px 19.5px 28.5px   42px   60px ------100px 20px - 100px ALTURA OFICIAL DEL TEXTO*/
+                   /*	/*--aAlto:calc(var(--a)*1.05);/*1.6 1.5 ALTO DE LA CASILLA DEL BOTON MAGNIFICADO 200px GRANDE*/
+                   /*	--alto:calc(var(--a)*2);/*ALTURA DE LOS ICONOS GENERALES*/
+                       /*--altO:calc(var(--a)*1);/*var(--a)*0.7);/*ALTURA DE LAS GLOSAS EN FILA*/
+                       /*--altS:min(calc(var(--a)*10),95vh);/*var(--a)*9.3);/*ALTURA DE LAS SEÑAS EN FILA*/
+                   /*	--ancho:850px;/* 850px 1000px 1150px 1300px 1450px --------ANCHO MAX DE LA PANTALLA WEB*/
+                   /*	--aGap:calc(var(--a)*0.4);/*0.4);/*MARGEN SUPERIOR E INFERIOR DE SEPARACION ENTRE CADA CASILLA*/
+               --b:5%;/*ANCHO EN % DE LA BARRERA DE PROTECCION entre a y b*/
+               --bh:5vh;/*ALTO EN vh DE LA BARRERA DE PROTECCION entre a y b*/
+                   /*	/* /*--bb:5vw;/*ANCHO EN vw DE LA BARRERA DE PROTECCION entre a y b*/
+                   /*	/* /*--bbpp:calc(100vw - (var(--bb)*2));/*DISTANCIA EN vw ENTRE b y p*/
+                   /*	--bp:calc(100% - (var(--b)*2));/*DISTANCIA EN % ENTRE b y p*/
+                   /*	--c:calc((var(--bp)/9) + var(--b));/*DISTANCIA EN % ENTRE a y c*/
+                   /*	
+                   /*	/* /*--cc:calc((var(--bbpp)/9) + var(--bb));/*DISTANCIA EN vw ENTRE a y c*/
+               /*--cABok:white;/*color texto acceso abOK*/
+               --cAlt:10vh;/*altura del icono de los 6 botones*/
+               --cBeige:rgb(26,144,255);/*COLOR del fondo inicial -> Nota este valor se trae desde wColor en inded.js debe ser igual al valor por defecto que tenga la variable g00VARS[31][2], por ejemplo i=6 y este numero i se busca luego en wColor[i][2] es decir en wColor[6][2] y de alli se trae el string del color FUERTE*/
+               /*--cblwh1 	SE PROGRAMA DESDE JS :rgb(30,30,30);/*black;/*SE PROGRAMA DESDE JS*/
+               /*--cblwh2 	SE PROGRAMA DESDE JS :white;/*white;/*amarilla:rgb(255,255,204);SE PROGRAMA DESDE JS*/
+               --cBrai:45px;/*Altura textos Braille 45px = 5mms centros superior e inferior*/
+               --cbw1:rgba(0,0,0,0.3);/*COLOR LINEA HORIZONTAL DIVISORIA SE PROGRAMA DESDE JS :rgba(0,0,0,0.3);/*rgba(0,0,0,0.2);PROVISIONAL, QUITAR ESTA VARIABLE.. ESTA LINEA SE PROGRAMA DESDE JS*/
+               --cBw1:rgba(0,0,0,0.1);/*COLOR LINEA HORIZONTAL DIVISORIA SE PROGRAMA DESDE JS :rgba(0,0,0,0.3);/*rgba(0,0,0,0.2);PROVISIONAL, QUITAR ESTA VARIABLE.. ESTA LINEA SE PROGRAMA DESDE JS*/
+               /*--cbw2 	SE PROGRAMA DESDE JS :rgba(255,255,255,0.5);/*rgba(255,255,255,0.4);PROVISIONAL, QUITAR ESTA VARIABLE.. ESTA LINEA SE PROGRAMA DESDE JS*/
+               /*--cbw22	SE PROGRAMA DESDE JS :rgba(255,255,255,0.25);/*rgba(255,255,255,0.2);PROVISIONAL, QUITAR ESTA VARIABLE.. ESTA LINEA SE PROGRAMA DESDE JS*/
+               --cDelta:490px;/*604/2 la otra mitad del ancho que debe recorre la marquesina, se programa desde JS!!*/
+               --cDia:transparent;/*LUZ día: fría cálida;*/
+                       /*---cGrey:rgb(198,198,198);/*grey;/*COLOR NEUTRO TECLADO Y ILINE*/
+                   /*	--cGreyC:rgb(248,248,248);/*COLOR GRIS CLARO TEXTO IMAGENES SEÑAS*/
+                       /*--cGreyC:rgba(98,98,98,0.03);/*COLOR GRIS OSCURO FONDO IMAGENES SEÑAS*/
+               --cGreyO:rgb(48,48,48);/*COLOR GRIS OSCURO FONDO IMAGENES SEÑAS*/
+               /*--cGreyT:rgba(198,198,198,0.1);/*COLOR NEUTRO TECLADO Y ILINE*/
+                   /*	/*--cLogoW:15%;/*15vw;/*ANCHO DEL ESPACIO DEL LOGO*/
+                   /*	/*--fila:calc((50% - (var(--b)))*0.5);/*ALTURA DE LA 'VENDA' Y DE CADA FILA DEL TECLADO PEQUEÑO*/
+                   /*	--cBorde:rgb(0,172,238);/*Azul cielo rgb(256,224,92);/*grey;/*rgb(255,122,24);/*color naranja #ff7a18*/
+                   /*	--cH:calc(10vh * 5);/*ALTO INVERSO DE LA PANTALLA
+                   /*	--cJPG:30vh;/*ALTURA DE LAS IMAGENES Y O ICONOS CENTRALES*/
+               /*--cHGlo:30;/*30 ALTURA DE LA GLOSA es adimencional se calcula desde js*/
+                       /*--cHIcA:calc(100vh - (2*(var(--bh))));/*20vh - 100vh - ALTURA ICONOS calc(100vh - (2*(var(--bh))))*/
+               --chico:90vh;/*90vh //calc(50vh - (2*(var(--bh))));/*20vh - 100vh - ALTURA ICONOS (VISOR???) calc(100vh - (2*(var(--bh))))*/
+                       /*--cHInt:calc((var(--chico)*0.7*var(--cWH)));/*ALTURA MAXIMA INTERPRETE --cHInt:calc((var(--chico)*0.7*var(--cWH)));*/
+                       /*---cHQrc:150px;/*ALTURA CODIGO QR*/
+               /*--cHSen:210;/*210 ALTURA DE LA SEÑA es adimencional se calcula desde js*/
+               --cHTex:25;/*25 ALTURA DEL TEXTO DE LA GLOSA es adimencional se calcula desde js*/
+               --cLuz:transparent;/*LUZ bombillo -rgba(0,0,0,0.1);*/
+               --cOL:transparent;/*COLOR TEXTO LOCAL EN PRESENTACION AV*/
+               --cOI:transparent;/*COLOR TEXTO INGLES EN PRESENTACION AV*/
+               --cOy:transparent;/*COLOR SOMBRA TEXTO INGLES/LOCAL EN PRESENTACION AV*/
+               --cOw:transparent;/*COLOR SOMBRA TEXTO INGLES/LOCAL EN PRESENTACION AV*/
+               --cMors:20px;/*Altura textos Morse*/
+               --cPres:black;/*COLOR borde presentación AV*/
+               /*--cVelo 	SE PROGRAMA DESDE JS*/
+                       /*	--cW:1vw;/*ANCHO DE LA PANTALLA x 50*/
+               --cWH:1;/*RELACION ANCHO/ALTO DE LA PANTALLA*/
+               --cYel:transparent;/*COLOR DE LA LUZ -rgba(255,255,0,0.1);*/
+               --kdot:2px;/*altura barra puntos o leds de colores inferiores sobre fondo negro*/
+               --marH:0.5vh;/*0.5vh;/*margen superior e inferior de la presentación AV*/
+                   /*	--mJPG:calc(var(--cJPG)*1.2);/*MARGEN PARA LAS IMAGENES Y O ICONOS CENTRALES*/
+               --palo:10px;/*10px ---- separador delgado para botones, mensajes y iLine*/
+                       /*--pali:calc(var(--palo)/2);/*separador delgado borde lateral*/
+               --pelo:1px;/*1px - ALTURA DE LA SOMBRA INTERNA DE CADA CASILLA*/
+                   /*	/*--pilo:calc(var(--pelo)*-2);/*SOMBRA - DEL LOGO*/
+               --pila:calc(var(--pelo)*2);/*SOMBRA + DEL LOGO*/
+                       /*---piLa:calc(var(--pila)*-1);/*SOMBRA + DEL LOGO*/
+                   /*	/*--pilO:calc(var(--pelo)*-74);/*SOMBRA - DE LA CANAL*/
+                   /*	/*--pilA:calc(var(--pelo)*74);/*SOMBRA + DE LA CANAL*/
+               /*--radio:3vh;/*3vh;/*RADIO LABEL Y BUTTON*/
+               --rmin:3px;/*5px;/*RADIO minimo LABEL Y BUTTON*/
+                   /*	--sina:67%;/*ANCHO DE LA MARQUEsina LOCAL*/
+                   /*	--sky:rgb(0,172,238);/*COLOR DE FONDO DEL LOGO AZUL*/
+               --z:10px;/*--z:15px altura del borde negro superior*/
+               }
+
+.cBOT
+,.cChico
+,.cEnt
+,.cFlex
+,.c--Menu
+,.c--Info
+,.c--Trin
+,.cTOB
+,.cZIn
+,#i--I
+,#iMenu
+,#iSoni{		align-items:center}
+
+.cFleB{		align-items:flex-end}
+
+.cFleT{		align-items:flex-start}
+
+.cAltu
+,.c--Ame
+,.cAME
+,.cBack
+,#iBody
+,#iFaro{		background:black}
+
+.cGre{			background:grey}
+
+.cAjust9{		background:rgb(30,30,30)}
+
+.cLuz{			background:rgb(256,252,236)}
+
+#y--Bot0l
+,#y--Bot0r{		background:rgba(0,0,0,0.05)}
+
+.cGrey{		background:rgba(0,0,0,0.1)}
+
+.cSom{			background:rgba(0,0,0,0.2)}
+
+.cVpres
+,.cTitul{		background:rgba(0,0,0,0.8)}
+
+.cEnt{			background:rgba(128,128,128,0.3)}
+
+.c--CR{		background:rgba(255,0,0,0.5)}
+
+.do--orOscu
+,.bo--ok{		background:transparent}
+
+.cBeiBg{		background:var(--cBeige)}
+
+.cIng
+,.cNeg
+,.yProsaL
+,.zProsa
+,#iNegro{		background:var(--cblwh1)}
+
+.cButton
+,.cTapa{		background:var(--cblwh2)}
+
+.cHR
+,#iBrAi{		background:var(--cbw1)}
+
+#iDia{			background:var(--cDia)}
+
+.cTela{		background:var(--cGreyO)}
+
+#iLuz{			background:var(--cLuz)}
+
+.cPres{		background:var(--cPres)}
+
+.c--Bof
+,#iVelo{		background:var(--cVelo)}
+
+.cChico
+,.cHori
+,.cVert
+,#iYell{		background:var(--cYel)}/*cGreyT)}*/
+
+.cA--me{		background:white}
+
+.cAma{			background:yellow}
+
+ *{			border:0}
+
+ .c--Stop{		border:3px groove rgba(168,168,168,0.3)}
+
+/*#iTic{ 		border:solid 0.3px transparent}*/
+
+#iNegro
+,#y--Bot0l
+,#y--Bot0r{		border:2px solid var(--cblwh1)}/*var(--sky)}/*orange}/*var(--cGrey)}/*black}*/
+
+.zProsa{		border-radius:0 0 var(--rmin) var(--rmin)}
+
+.cGre{			border-radius:0 0 var(--kdot) var(--kdot)}
+
+#yBot0r
+,#yBot6
+,#yBot3
+,#yBot9{		border-radius:0 11.25vh 11.25vh 0}
+
+#iFaro{		border-radius:0 20% 0 0}
+
+#yBot0l
+,#yBot4
+,#yBot1
+,#yBot7{		border-radius:11.25vh 0 0 11.25vh}
+
+.c--Ame
+,.c--Ask
+,.c--CR
+,#y--Hear{		border-radius:50%}
+
+.cBof
+,.cLen{			border-radius:calc(var(--rmin)*2)}/* 5px var(--bh) 5px}*/
+
+.cAma
+,.cLuz{			border-radius:var(--rmin) var(--rmin) 0 0}
+
+.cLDown{		border-radius:var(--rmin) var(--rmin) var(--chico) var(--chico)!important} /*var(--radio) var(--radio)!important}*/
+
+.c1570
+,.cButton
+,.cTitul{		border-radius:var(--rmin)}/* 5px var(--bh) 5px}*/
+
+#iNegro{		border-radius:var(--rmin) 0 0 var(--rmin)}
+
+.z70{			border-radius:var(--rmin) var(--rmin) 0 0}/*calc(var(--cHGlo)*1px) calc(var(--cHGlo)*1px) 0 0}*/
+
+.cLUp{			border-radius:var(--chico) var(--chico) var(--rmin) var(--rmin)!important}/*border-radius:var(--radio) var(--radio) var(--rmin) var(--rmin)!important}*/
+
+.cBott
+,.cChico
+,.cPic2
+,.cPunto
+,.c--Reloj{		bottom:0}
+
+
+#i--Dice
+,#i--Faro{		bottom:12.5%}
+
+/* .c--Menu{		bottom:0}*/
+
+.c--Menu
+,#iBrail{		bottom:calc(var(--b) + 0px)}
+
+#iCodQ
+,#iFaro{		bottom:calc(var(--kdot) + 0.5vh)}
+
+ #iNot2{		bottom:var(--pelo)}/*calc(19.5vh - var(--pelo))}/*19.5vh - 9.75vh  16vh  8vh   se toma 10vh menos .25vh(x2) del borde inferior*/
+
+.c--CR{		box-shadow:0 0 0 calc(var(--chico)*0.03) red,0 0 0 calc(var(--chico)*0.035) var(--cblwh1), inset 0 0 0 calc(var(--chico)*0.06) white}/*yellow}/*var(--cBeige)}*/
+
+.c--Ame{		box-shadow:0 0 0 calc(var(--chico)*0.08) red,0 0 0 calc(var(--chico)*0.1) var(--cblwh1), inset 0 0 0 calc(var(--chico)*0.15) white}/*yellow}/*var(--cBeige)}*/
+
+.cLen{			box-shadow:inset 0 0 1px var(--cBeige)}
+
+.cBu--tton:focus
+,.cBoRd{		box-shadow:inset 0 0 0 var(--palo) var(--cBeige)}/*var(--cBeige)}/*var(--cBeige)}/*cBorde)}/*var(--sky)}*/
+
+.rEsqi{		box-shadow:0 0 0 calc(var(--palo)*0.6) red, inset 0 0 0 calc(var(--palo)*0.25) var(--cblwh2), inset 0 0 0 calc(var(--palo)*2.5) red}
+
+.cSom{			box-shadow:0 0 5px 5px rgba(0,0,0,0.1)}
+
+.z70{			box-shadow:0 max(3px,0.7vh) var(--cblwh1)}
+
+.cBOT{			box-shadow:inset 0 0 0 0.5px var(--cbw1), 0 0 0 0.3px var(--cbw2), inset 0 0 0 calc(var(--palo)/2) var(--cYel),inset 1px 1px 1px calc(var(--palo)/2) var(--cYel)}/*var(--cYel) var(--cGreyT)*/
+
+.cEsqi{		box-shadow:inset 0 0 0 calc(var(--palo)*0.25) var(--cblwh2), inset 0 0 0 calc(var(--palo)*2) var(--cBeige)}
+
+.cAjust9
+,.cAma
+,.cLuz
+,.cTitul{		box-shadow:inset 0 0 0 var(--pelo) var(--cblwh1)} 
+
+/*
+#--iCAPA{		box-shadow:inset 0 0 min(35vh,35vw) min(7vh,7vw) black}
+*/
+/*
+.cButton:focus 
+.cFon{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cBeige)}
+*/
+
+.cButton:focus
+.cAjust9
+,.cButton:focus
+.cAma
+,.cButton:focus
+.cLuz{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cBeige), inset calc(var(--palo)*1) 0 0 var(--cBeige), inset 0 calc(var(--palo)*1) 0 var(--cBeige), inset calc(var(--palo)*-1) 0 0 var(--cBeige)}/*var(--cBeige)}/*var(--cBeige)}/*cBorde)}/*var(--sky)}*/
+
+/*
+.cFon{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cbw1)}
+*/
+
+.cBof{			box-shadow:inset 1px 1px 5px lightgray,inset -1px -1px 5px lightgray}/*var(--cYel) var(--cGreyT)*/
+
+.cStop{		box-shadow:none!important}
+
+.cBOT
+,.c--Menu
+,.c--Reloj
+,.cTec
+,#iNegro{		box-sizing:border-box}
+
+.cAma
+,.cLuz
+,.cNoV{			color:black}
+
+#i--NEG{		color:lightgrey}
+
+.c--AjInv{		color:transparent}
+
+.cBeiCo{		color:var(--cBeige)}
+
+.cButton
+,.cTapa
+,#iBrAi
+,#iEnt{			color:var(--cblwh1)}
+
+.cAsk
+,.c--Infi
+,.cInfo
+,.cIng
+,.c--Reloj
+,.yProsaL
+,.zProsa
+,#iInfo
+,#i--Hora{		color:var(--cblwh2)}
+
+.cIyel{		color:var(--cOI)}
+
+.cIwhi{		color:var(--cOL)}
+
+
+
+.cAme
+,.cAME
+,.c--CR
+,.cFJ
+,.cSiV
+,#i--Noti
+,#iTTP{			color:white}
+
+.cAjust9{		color:yellow}/*var(--cABok)}*/
+
+.cHori
+,.cGrey
+,.cLR
+,.c--Neg
+,.cVert
+,#iBody{		cursor:no-drop}
+
+#iRUTA{		cursor:ns-resize}
+
+.cBOT
+,.cBof
+,.cButton
+,.cDedo
+,.cTapa{		cursor:pointer}/*!important usar para que funcione click en iphone????*/
+
+.yProsaL{		display:block}
+
+.cBOT
+,.c--Chico
+,.cEnt
+,.cFleB
+,.cFleT
+,.cFlex
+,.c--Menu
+,.c--Reloj
+,.cTOB
+,.c--Trin
+,.cZIn
+,.i--nner
+,#i--I
+,#iMenu
+,#iSoni{		display:flex}
+
+.cAltu
+,.cPic2
+,.cObj{			display:inline-block}
+
+.sepia{		filter:sepia(30%)}
+
+.cBof
+,.c--Info{		float:left}
+
+ *{			font-family:Roboto,Century Gothic,Monaco,Verdana,Tahoma,Arial,sans-serif}/*'Monaco','Verdana','Arial',sans-serif}*/
+
+.cCero
+,.cFs0{			font-size:0}
+
+.c--Marqu{		font-size:32px}/*32px es tomado de f0028, switch aux case 4 = 32px tamaño mediano  13vh}/*13vh 9vh  42px}/*8vh}*/
+
+.big{			font-size:135%}
+
+.yProsaL
+,.zProsa{		font-size:calc(1px * var(--cHTex))}/*70%}/**/
+
+.cGran{		font-size:calc(1.7 * var(--cAlt))}
+
+.cCR
+,.cMin{			font-size:calc(var(--chico) * 0.3)!important}/*calc(var(--chico)*0.4)*/
+
+.cAsk{			font-size:calc(var(--chico) * 0.5)!important}/*calc(var(--chico)*0.4)*/
+
+.c--CR{		font-size:calc(var(--chico) * 0.7)!important}/*calc(var(--chico)*0.4)*/
+
+.cAjust8
+,.cAma
+,.cLuz{			font-size:calc(var(--chico) * 0.8)}/*calc(var(--chico)*0.4)*/
+
+.cMaX{			font-size:calc(var(--chico) * 3)}/*calc(var(--chico)*0.7)*/
+
+.cMarqu{		font-size:min(6.5vh,6.5vw)}/*min(6.5vh,6.5vw)}/*min(8vh,8vw) o 32px*/
+
+.cFanta{		font-size:min(50vh,50vw)}/*calc(var(--chico)*0.7)*/
+
+
+#i--Menu
+,#i--Soni{		font-size:min(var(--bh),4vw)}/*calc(var(--cAlt) * 0.5),6vw)}/*min(calc(var(--bh)*0.7),6vw)}/*calc(var(--cAlt) * 0.5)}*/
+
+#i--Hora{		font-size:min(calc(var(--bh)*0.7),6vw)}/*min(8.5vh,8.5vw) max(13.5vh)}/*min(8.5vh,8.5vw),max(13.5vw) calc(var(--chico)*0.7)*/
+
+.cFran{		font-size:min(var(--bh),6vw)}
+
+#iInfo{		font-size:min(var(--cAlt),11vw)}/*var(--b))}*/
+
+.cMax{			font-size:var(--chico)}/*calc(var(--chico)*0.7)*/
+
+.cButton
+,.cSiza{		font-size:var(--a)}
+
+.cTalk{		font-size:var(--bh)}
+
+.c--Nube
+,.cTran{		font-size:var(--cAlt)}
+
+.cNoV
+,.cSiV{			font-size:min(17vh,17vw)}
+
+.cBra1
+,.cBrai
+,.cBraI
+,.cBraI1
+,.cBraIl
+,.cTec{			font-size:var(--cBrai)}
+
+.cMors{		font-size:var(--cMors)}
+
+#iMenu
+,#iSoni
+,#iHora{		font-size:min(calc((max(var(--z),5vh))*0.5),5vw)}/*calc((max(var(--z),5vh))*0.4)}/*min(calc((max(var(--z),5vh))*0.5),7vw)}*/
+
+#iLeft{		font-size:min(calc((max(var(--z),5vh))*0.7),6.7vw)}/*calc((max(var(--z),5vh))*0.77)}/*min(calc((max(var(--z),5vh))*0.5),7vw)}*/
+
+#i--I{			font-size:min(calc(0.7*(max(var(--z),5vh))),6vw)}/*,min(calc((max(var(--z),5vh))),8vw)}*/
+
+.cIwhi
+,.cIyel{		font-weight:600}
+
+.cGlosD{		height:5%}/*calc(1px * var(--cHGlo))}*/
+
+.cSom{			height:5px}
+
+.cBota
+,.cBote
+,#i--Menu{		height:10vw}
+
+.cImKe{		height:13vh}/*9vh  42px}/*8vh}*/
+
+.cBOT
+,.cEnt
+,.cMark
+,.c--TOB{		height:20%}/*height:25%}/*33.33333333%}/*18.75%*/
+
+.cTones{		height:90vh}/*67.5vh}/*si --bh = 5vh calc((100vh - (2*var(--bh)))*0.75)}/*si --bh vale 5vh :: 67,5vh 56.25vh}/*(antes 18.75% x 3)  PORQUE VALE ESE VALOR de dónde sale???*/ 
+
+.z70{			height:95%}/*calc(1px * var(--cHSen))}*/
+
+.c1570
+,.c1x0
+,.c1x1
+,.c--Bof
+,.cBox
+,.cInfo
+,.cLogo
+,.cLR
+,.cObj
+,.c--Reloj
+,.cScroll
+,.cVert
+,.yProsaL
+,.zProsa
+,#iRUTA
+,#iTAPA{		height:100%}
+
+.cBof{			height:calc(100% - var(--kdot))}
+
+.cTpres{		height:calc(17vh - var(--pelo))}/*17vh}/*calc(17vh - var(--pelo))}/*calc(19.5vh - var(--pelo))}/*19.5vh - 9.75vh  16vh  8vh   se toma 10vh menos .25vh(x2) del borde inferior*/
+
+.cVpres{		height:70vh}/*calc(50vh - (var(--marH) * 2) - (var(--pelo)*2) - var(--kdot))}/*80vh - 1vh de los 2 margenes arriba y abajo,  84vh  80vh menos 0.5vh del borde superior y otros 0.5vh del borde inferior*/
+
+.cCel0{		height:calc(100vh - 0.5vh - max(var(--z),5vh) - var(--kdot))}/*var(--kdot) - (max(var(--z),5vh)) - (max(var(--z),5vh)))}/*calc(100% - var(--kdot) - (max(var(--z),5vh)))}*/
+                              /*  linea h - info loc         -  leds   */
+
+.cTi0{			height:calc(100vh - 0.5vh - max(var(--z),5vh) - (var(--marH) * 2) - (var(--kdot)))}/*parte oscura y central de los titulares*/
+                              /*  linea h - info loc         -  margen sup/inf   -  leds       */
+                          
+.cCel1{		height:calc(100vh - 2*(max(var(--z),5vh)))}/*var(--kdot) - (max(var(--z),5vh)) - (max(var(--z),5vh)))}/*calc(100% - var(--kdot) - (max(var(--z),5vh)))}*/
+                               /*   info loc y filbo(incluye ya los leds) */
+
+.cTi1{			height:calc(100vh - 2*(max(var(--z),5vh)) - (var(--marH) * 2))}/*parte oscura y central de los titulares*/
+                               /*  info loc y filbo(incluye ya los leds)  -  margen sup/inf  */
+
+.c--Vert{		height:calc(100vh - var(--z))}
+
+#iGol{			height:calc(var(--bh)*2)}/*calc(var(--cWH) * 65vh)*/
+
+.cPic2{		height:calc(var(--chico) * 0.5 *var(--cWH))}/*calc(var(--chico) * 0.5 *var(--cWH))   calc(var(--cWH) * 65vh)*/
+
+.c--Ame{		height:calc(var(--chico) * 0.8)}
+
+.c--BloK
+,.cGre{			height:calc(var(--kdot) * 1.0)}/*1.33 = 4px - 1 = 3px - 0.67 = 2px aprox*/
+
+.cCua{			height:min(17vh,17vw)}
+
+.cChico
+,.cHori
+,.c--Menu
+,.c--Reloj{		height:var(--b)}
+
+.cPunto{		height:var(--bh)}
+
+#iBrail{		height:var(--cBrai)}
+
+.cPicI{		height:var(--chico)}
+
+.cBack{		height:var(--kdot)}
+
+ hr{ 			height:var(--pila)}
+
+.cGrey
+,.cLen
+,.cNeg{			height:max(var(--z),5vh)}
+
+.cBOT
+,.cChico
+,.cEnt
+,.cPic2
+,.cFleB
+,.cFleT
+,.cFlex
+,.c--Menu
+,.cObj
+,.cTOB
+,.c--Trin
+,.cZIn
+,#iSoni{		justify-content:center}
+
+#i--I
+,#iMenu{		justify-content:flex-end}
+
+.cBota
+,.cLen
+,.c--Menu
+,.cSom
+,#i--Left
+,#i--Menu{		left:0}
+
+.cTitul{		left:0.5vw}
+
+.c1570{		left:15%}
+
+.cChico{		left:20vw}/*calc(1.7*var(--cAlt))}/*min(17vh,17vw)}*/
+
+.cHori{		left:33.3333333%}
+
+/*.c--Band{		left:min(17vh,17vw)}/*calc(min(8.5vh,8.5vw) - 0.5vw)}*/
+
+
+#iBrail{		left:max(var(--pila),0.5vw)}/*0.5vw)}*/
+
+#i--Dice
+,#yBot0l
+,#yBot4
+,#yBot1
+,#yBot7{		left:var(--b)}
+
+.c--Vpres{		left:var(--pelo)}
+
+.cCero
+,.cNada{		line-height:0}
+
+.yProsaL
+,.zProsa{		line-height:100%}/*calc(1px * var(--cHGlo))}/*min(calc(var(--cWH) * 10vh),19vh)}*/
+
+.c--Ame{		line-height:calc(var(--chico) * 0.8)!important}
+
+.c--Min{		line-height:calc(var(--chico) * 0.3)!important}/*calc(var(--chico)*0.4)*/
+
+.cMarqu{		line-height:min(9vh,9vw)}
+
+.cTapa{		line-height:var(--a)}
+
+.cTalk{		line-height:var(--bh)}
+
+.cBra1
+,.cBrai
+,.cBraI
+,.cBraI1
+,.cBraIl{		line-height:var(--cBrai)}
+
+.cMors{		line-height:var(--cMors)}
+
+*{				margin:0}
+
+.yProsaL{		margin:0 auto}
+
+.c100I{		margin:0 calc(max(var(--pila),0.5vw))}/*Margen lateral delgado simil a la Ruta*/
+/*.c100I{		margin:0 calc(max(var(--pelo),0.25vw))}/*Margen lateral delgado*/
+
+.cTela{		margin:0 var(--palo)}
+
+.cBloK{		margin:0 1%}
+
+.cGre{			margin:0 2%}
+
+.cButton{		margin:1px 0}
+
+.c--Vpres{		margin:50px auto}
+
+ hr{ 			margin:calc(var(--pila)*2) 0}
+
+.cAltu{		margin:calc(var(--pila)*2) 0.5px}
+
+.cTapa{		margin:max(0.5vh,0.5vw) 0.5vw}/*?max?*/
+
+.cAsk{			margin-bottom:calc(var(--chico) * -0.3)}
+
+.cInfi{		margin-left:0.5vw}
+
+.cCR{			margin-left:calc(var(--chico) * -0.2)}
+
+.cAsk{			margin-left:calc(var(--chico) * -0.35)}
+
+.big{			margin-right:1vh}
+
+.cPush{		margin-right:calc(var(--chico) * -0.2)}
+
+.cMin{			margin-right:calc(var(--chico) * 0.2)}
+
+.cMax{			margin-right:calc(var(--chico) *  0.05)}/*-0.35)}*/
+
+.cCua{			max-height:27vh}
+
+.cPic2{		max-height:100%}/*calc(var(--chico)*0.85)}   85vh}*/
+
+.cCua
+,#iGol{			max-width:27vw}
+
+.c1x0{			max-width:200vw}
+
+.c--Pic2{		max-width:calc(var(--chico)*0.531)}/*53.1vh}/*activar si es necesario*/
+
+.cPic2{		max-width:min(calc(var(--chico)*0.531),calc(50vw - var(--pila)))}/*min(53.1vh,calc(50vw - var(--pila)))}/*desactivar de ser necesario*/
+
+.cPic2{		min-height:calc((var(--chico)*0.35))}/*(var(--chico)*0.35))}/*/
+
+.cPic2{		min-width:calc(var(--chico)*0.21875)}/*var(--chico)*0.21875)}/*desactivar de ser necesario*/
+
+.c--Pic2{		min-width:calc(var(--chico)*0.25)}/*(var(--chico)*0.25)}/*25vh}/*desactivar de ser necesario*/
+
+.c1570
+,.c1x1
+,.cBof
+,.cGlosD
+,.cLen
+,.c--Neg
+,.cTitul
+,.cRiel
+,#iBrail
+,#iCelu
+,#iFonde{		overflow:hidden}
+
+.cButton
+,.cTapa{		overflow-x:hidden}
+
+.c--Infi
+,.cInfo
+,.cTpres{		overflow-y:hidden}
+
+.cScroll{		overflow-y:auto}
+
+.cTapa{		padding:0 0 calc(50vh - var(--bh) - (var(--a)*0.5)) 0}
+
+.cButton{		padding:0 0 calc(var(--chico)*0.14) 0}
+
+.yProsaL
+,.zProsa{		padding:0 1vw}
+
+.cPadd4A{		padding:0 15%}
+
+.i--nner>*{	padding:0 var(--cDelta)}/*604/2 la otra mitad del ancho!!*/
+
+.inner>*{		padding:0}/*8.5vh 0}/*604/2 la otra mitad del ancho!!*/
+
+.c--Paddi{		padding:calc(50vh - var(--bh) - (var(--a)*0.5)) max(var(--pila),0.5vw) calc(100vh - 45px - var(--a)) max(var(--pila),0.5vw)}
+
+.cPaddi{		padding:calc((90vh*0.75) + var(--bh)) max(var(--pila),0.5vw)}/*0.5vw)}*/
+
+.cTela{		padding:calc(var(--palo)/2) var(--palo)}
+
+.cInfi{		padding-left:0.5vw}
+
+.cDedo
+,.cGrey
+,.c--Neg
+,#iFilbo
+,#iMarco
+,#yBTNS
+,#yBot0l
+,#yBot0r
+,#yBot3
+,#yBot7
+,#yBot9
+,#iBody{		pointer-events:auto}
+
+.cBota
+,.cBote
+,.c--Neg
+,.cPic2
+,.cSom
+,.cTones
+,#iDia
+,#iFonde
+,#i--Hora
+,#iLuz
+,#i--Menu
+,#iYell
+,#iMaxim
+,#iCAPA
+,img{			pointer-events:none}
+
+.c1570
+,.cBack
+,.cBOT
+,.cBota
+,.cBote
+,.cBox
+,.cChico
+,.cCua
+,.cEnt
+,.cGrey
+,.cHori
+,.cLen
+,.cLogo
+,.cLR
+,.cMark
+,.c--Marqu
+,.c--Menu
+,.cNeg
+,.cPunto
+,.c--Reloj
+,.cRiel
+,.cSom
+,.cTones
+,.cTitul
+,.c--TOB
+,.cTpres
+,.cVert
+,.cVpres
+,.cZIn
+,#iBrail
+,#iCelu
+,#iGol
+,#i--Hora
+,#i--Menu
+,#iPRESE{		position:absolute}
+
+#iBody{		position:fixed}
+
+.cAltu
+,.cPicI
+,.inner
+,#iBr--Ai
+,#i--Celu
+,#i--PRESE{		position:relative}
+
+
+.cBote
+,.cDer
+,#i--Hora
+,#iNegro
+,#iPos2{		right:0}
+
+.c--Flag{		right:25vw}
+
+ .cTpres{		right:calc(15% + var(--pelo))}
+
+#i--Faro{		right:calc(var(--bh)/4)}
+
+ #iV1l{		right:calc(var(--kdot)*2)}
+
+ #iVoi{		right:calc(var(--kdot)*3)}
+
+ #iV1i{		right:calc(var(--kdot)*4)}
+
+#i--Faro
+,#yBot0r
+,#yBot6
+,#yBot3
+,#yBot9{		right:var(--b)}
+
+#i--Menu
+,#iVol{			right:var(--kdot)}
+
+.cAltu
+,.cPic2
+,.cTela
+,.cTpres{		text-align:center}
+
+.cBra1
+,.cBrai
+,.cBraI
+,.cBraI1
+,.cBraIl{		text-align:left}
+
+
+#i--I{			text-align:right!important}
+
+.c--Infi
+,.cInfo
+,.yProsaL
+,.zProsa{		text-overflow:clip}/*ellipsis*/
+
+.cIyel{		text-shadow:2px 2px 2px var(--cOy),-2px -2px 2px var(--cOy),2px -2px 2px var(--cOy),-2px 2px 2px var(--cOy),0 2px 2px var(--cOy),0 -2px 2px var(--cOy),2px 0 2px var(--cOy),-2px 0 2px var(--cOy)}
+
+.cIwhi{		text-shadow:2px 2px 2px var(--cOw),-2px -2px 2px var(--cOw),2px -2px 2px var(--cOw),-2px 2px 2px var(--cOw),0 2px 2px var(--cOw),0 -2px 2px var(--cOw),2px 0 2px var(--cOw),-2px 0 2px var(--cOw)}
+
+#i--Hora{		text-shadow:2px 2px 2px var(--cblwh1),-2px -2px 2px var(--cblwh1),2px -2px 2px var(--cblwh1),-2px 2px 2px var(--cblwh1),0 calc(var(--palo)/2) calc(var(--palo)/2) var(--cBeige),0 -2px 2px var(--cblwh1),2px 0 2px var(--cblwh1),-2px 0 2px var(--cblwh1)}
+
+.c--Trin
+,#iBrAi{		text-shadow:1px 1px 1px var(--cblwh2),-1px -1px 1px var(--cblwh2),1px -1px 1px var(--cblwh2),-1px 1px 1px var(--cblwh2),0 1px 1px var(--cblwh2),0 -1px 1px var(--cblwh2),1px 0 1px var(--cblwh2),-1px 0 1px var(--cblwh2)}
+
+.cAjust8{		text-shadow:2px 2px 2px var(--cblwh2),0 2px 2px var(--cblwh2),2px 0 2px var(--cblwh2),1px 1px 3px var(--cblwh1),0 1px 3px var(--cblwh1),1px 0 3px var(--cblwh1), calc(var(--chico)*0.5) calc(var(--chico)*0.5) calc(var(--chico)*0.8) var(--cBeige), calc(var(--chico)*-0.5) calc(var(--chico)*-0.5) calc(var(--chico)*0.8) var(--cBeige), 0 0 calc(var(--chico)*0.8) var(--cBeige)}
+
+/*.cAju83{		text-shadow:2px 2px 2px var(--cblwh2),0 2px 2px var(--cblwh2),2px 0 2px var(--cblwh2),1px 1px 3px var(--cblwh1),0 1px 3px var(--cblwh1),1px 0 3px var(--cblwh1), calc(var(--chico)*0.05) calc(var(--chico)*0.05) calc(var(--chico)*0.3) var(--cBeige), calc(var(--chico)*-0.05) calc(var(--chico)*-0.05) calc(var(--chico)*0.3) var(--cBeige)!important}*/
+
+.cSoCo{		text-shadow:2px 2px 2px var(--cblwh2),0 2px 2px var(--cblwh2),2px 0 2px var(--cblwh2),5px 5px 5px var(--cblwh1),0 5px 5px var(--cblwh1),5px 0 5px var(--cblwh1), calc(var(--chico)*0.7) calc(var(--chico)*0.7) var(--chico) var(--cBeige), calc(var(--chico)*-0.7) calc(var(--chico)*-0.7) var(--chico) var(--cBeige), 0 0 var(--chico) var(--cBeige)!important}
+
+.cAr8{			text-shadow:-2px 2px 2px var(--cblwh2),0 2px 2px var(--cblwh2),-2px 0 2px var(--cblwh2),-1px 1px 3px var(--cblwh1),0 1px 3px var(--cblwh1),-1px 0 3px var(--cblwh1), calc(var(--chico)*-0.5) calc(var(--chico)*0.5) calc(var(--chico)*0.8) var(--cBeige), calc(var(--chico)*0.5) calc(var(--chico)*-0.5) calc(var(--chico)*0.8) var(--cBeige), 0 0 calc(var(--chico)*0.8) var(--cBeige)!important}
+
+.cAb8{			text-shadow:2px -2px 2px var(--cblwh2),0 -2px 2px var(--cblwh2),2px 0 2px var(--cblwh2),1px -1px 3px var(--cblwh1),0 -1px 3px var(--cblwh1),1px 0 3px var(--cblwh1), calc(var(--chico)*0.5) calc(var(--chico)*-0.5) calc(var(--chico)*0.8) var(--cBeige), calc(var(--chico)*-0.5) calc(var(--chico)*0.5) calc(var(--chico)*0.8) var(--cBeige), 0 0 calc(var(--chico)*0.8) var(--cBeige)!important}
+
+.cAjust9
+,.cAma
+,.cLuz{			text-shadow:none}/*de última para no ponerle !important*/
+
+.cGrey
+,.cLen
+,.cLR
+,.cNeg
+,.cVert
+,.cTop
+,.cZIn
+,#iRUTA
+,#iTAPA{		top:0}
+
+.cTitul{		top:var(--marH)}
+
+.c46{			top:20%}/*top:25%}/*33.33333333%}*/
+
+.c13{			top:40%}/*top:50%}/*33.33333333%}*/
+
+.c--Vpres{		top:calc(10.5vh + var(--pelo) - (var(--kdot)* 0.5))}/*84vh  80vh menos 0.5vh del borde superior el pelo es el grosor de la linea negra del borde*/
+
+.c--Vpres{		top:1px}/*calc(10.5vh + var(--pelo))}/*Se calculo 100vh menos el alto de la imagen - la mitad del borde inferior: calc(10.5vh + var(--pelo) + (var(--kdot)* 0.5)) [- (var(--kdot)* 0.5)) menos la mitad del borde inferior]   84vh  10.5vh menos 0.5vh del borde superior*/
+
+/*
+.c46999{			top:calc(((62.5% - (1.25*(var(--b))))*(1/3)) + var(--b))}
+
+.c31999{			top:calc(((62.5% - (1.25*(var(--b))))*(2/3)) + var(--b))}
+*/
+
+.cTones{		top:var(--bh)}
+
+#iNoti{		top:var(--pelo)}/*calc(19.5vh - var(--pelo))}/*19.5vh - 9.75vh  16vh  8vh   se toma 10vh menos .25vh(x2) del borde inferior*/
+
+#iCelu{		top:max(var(--z),5vh)}
+
+.cGlosD
+,.c--Infi
+,.cInfo
+,.yProsaL
+,.zProsa
+,.i--nner{		white-space:nowrap}
+
+.c--Menu
+,#i--Menu{		width:8vw}
+
+.cBota
+,.cBote
+,.c--Reloj
+,#i--Hora{		width:10vw}
+
+.cGre{			width:12.66%}/*calc(16.6666666% - 2px)}/*16.66 - 4 18%}/*23%*/
+
+.cBloK{		width:14.6666666%}/*18%}/*23%*/
+
+#i--I
+,#iMenu
+,#iSoni{		width:9vw}
+
+#iHora{		width:18vw}
+
+.cBof{			width:16.6666666%}
+
+#iGol{			width:17vh}
+
+.cChico{		width:60vw}/*calc(100% - 3.4*(var(--cAlt)))}/*min(17vh,17vw)))}*/
+
+.cHori
+,.cLR
+,.cVert{		width:33.3333333%}
+
+#iLeft{		width:64vw}
+
+.c1570{		width:70%}
+
+.c1x1
+,.cBack
+,.c--Band
+,.cBox
+,.cButton
+,.cGrey
+,.cEnt
+,.cLen
+,.cNeg
+,.cSom
+,.cPic1
+,.cPicI
+,.cRiel
+,.cTones
+,.inner
+,#iB--rail
+,#iCelu
+,#i--NEG{		width:100%}
+
+.cBOT
+,.c--TOB{		width:calc(33.3333333% - var(--b))}
+
+.cTpres{		width:calc(70%  - (var(--pelo)*2))}
+
+.cTitul
+,.cTapa{		width:calc(100% - 1vw)}
+
+.c--Tpres
+,.cVpres{		width:calc(100%  - (var(--pelo)*2))}
+
+#iBrail{		width:calc(100% - 2*(max(var(--pila),0.5vw)))}/*0.5vw)}*/
+
+.c--Ame{		width:calc(var(--chico) * 0.8)}
+
+.cPic2{		width:calc(var(--cWH) * 50vw)}
+
+.cCua{			width:min(17vh,17vw)}
+
+.cTec
+,#iNegro{		width:var(--b)}
+
+.c1570
+,.cPadd4A{		word-wrap:break-word}
+
+.cAsk{			-moz-transform:rotate(			0deg); /* Mozilla */
+                   -ms-transform:rotate(		0deg); /* IE 9 */
+                   -o-transform:rotate(		0deg); /* Opera */
+                   -webkit-transform:rotate(	0deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			0deg)/* CSS3 */
+                   }
+
+
+.c10Rot{		-moz-transform:rotate(			10deg); /* Mozilla */
+                   -ms-transform:rotate(		10deg); /* IE 9 */
+                   -o-transform:rotate(		10deg); /* Opera */
+                   -webkit-transform:rotate(	10deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			10deg)/* CSS3 */
+                   }
+
+.c10RoT{		-moz-transform:rotate(			-10deg); /* Mozilla */
+                   -ms-transform:rotate(		-10deg); /* IE 9 */
+                   -o-transform:rotate(		-10deg); /* Opera */
+                   -webkit-transform:rotate(	-10deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			-10deg)/* CSS3 */
+                   }
+
+.c25Rot{		-moz-transform:rotate(			25deg); /* Mozilla */
+                   -ms-transform:rotate(		25deg); /* IE 9 */
+                   -o-transform:rotate(		25deg); /* Opera */
+                   -webkit-transform:rotate(	25deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			25deg)/* CSS3 */
+                   }
+
+.c45Rot{		-moz-transform:rotate(			45deg); /* Mozilla */
+                   -ms-transform:rotate(		45deg); /* IE 9 */
+                   -o-transform:rotate(		45deg); /* Opera */
+                   -webkit-transform:rotate(	45deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			45deg)/* CSS3 */
+                   }
+
+.c45RoT{		-moz-transform:rotate(			-45deg); /* Mozilla */
+                   -ms-transform:rotate(		-45deg); /* IE 9 */
+                   -o-transform:rotate(		-45deg); /* Opera */
+                   -webkit-transform:rotate(	-45deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			-45deg)/* CSS3 */
+                   }
+
+.c90Rot{		-moz-transform:rotate(			90deg); /* Mozilla */
+                   -ms-transform:rotate(		90deg); /* IE 9 */
+                   -o-transform:rotate(		90deg); /* Opera */
+                   -webkit-transform:rotate(	90deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			90deg)/* CSS3 */
+                   }
+
+.c90RoT{		-moz-transform:rotate(			-90deg); /* Mozilla */
+                   -ms-transform:rotate(		-90deg); /* IE 9 */
+                   -o-transform:rotate(		-90deg); /* Opera */
+                   -webkit-transform:rotate(	-90deg); /* Chrome, Safari, Opera */
+                   transform:rotate(			-90deg)/* CSS3 */
+                   }
+
+.cInvert{		-moz-transform:scaleX(			-1); /* Mozilla */
+                   -ms-transform:scaleX(		-1); /* IE 9 */
+                   -o-transform:scaleX(		-1); /* Opera */
+                   -webkit-transform:scaleX(	-1); /* Chrome, Safari, Opera */
+                   transform:scaleX(			-1)/* CSS3 */
+                   }
+
+.c--Ask
+,.cAsK
+,.c--Trin{		-webkit-text-fill-color:transparent}
+
+.cASK
+,.c--SiV
+,.cTec{			-webkit-text-fill-color:var(--cblwh2)}
+
+.c--Nube{		-webkit-text-fill-color:var(--cbw1)}
+
+.cFanta{		-webkit-text-fill-color:var(--cBw1)}
+
+
+.cFran{		-webkit-text-fill-color:var(--cBeige)}
+
+
+.cGran
+,.cTran{		-webkit-text-fill-color:var(--cbw2)}
+
+.cOff{			-webkit-text-fill-color:var(--cbw22)!important}
+
+.c--SiV
+,.c--Trin{		-webkit-text-stroke:1px black}/*(--cblwh1)}*/
+
+.cFanta
+,.c--Nube{		-webkit-text-stroke:1px var(--cblwh2)}
+
+.cTec{			-webkit-text-stroke:1.5px var(--cblwh1)}
+
+.cGran
+,.cTran{		-webkit-text-stroke:2px var(--cblwh1)}
+
+.cFran{		-webkit-text-stroke:2px lightgray}
+
+.cOff{			-webkit-text-stroke:1px grey!important}
+
+.cAme{			-webkit-text-stroke:calc(var(--chico)*0.01) black}
+
+.cAsk{			-webkit-text-stroke:calc(var(--chico)*0.02) var(--cblwh1)}
+
+.cAME{			-webkit-text-stroke:calc(var(--chico)*0.03) black}
+
+.cAsK
+,.cASK{			-webkit-text-stroke:calc(var(--chico)*0.03) var(--cblwh1)}
+
+
+
+
+/* Evitar la selección de texto de un <body> elemento en todos los principales navegadores :: https://www.techiedelight.com/es/disabling-text-selection-cut-copy-right-click/*/
+body {			-youbkit-touch-callout: none;	/*iOS Safari*/
+                   -youbkit-user-select: none;	/* Chrome 6.0+, Safari 3.1+, Edge y Opera 15+ */
+                   -moz-user-select: none;		/*Firefox*/
+                   -ms-user-select: none;		/* IE 10+ y Edge */
+                   user-select: none;			/* Versión sin prefijo, actualmente compatible con Chrome y Opera */
+                   }
+
+/*
+@keyframes marquee
+       {		from{transform: translateX(100%);}
+                 to{transform: translateX(-100%);}
+               }
+*/
+
+/*
+.marquee {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+     }*/
+/*  
+.marquee .inner {
+       position: relative;
+       width: 100%;
+       display: flex;
+       /*background: green;*/
+       /*color: white;*/
+       /*font-size: 8rem;*/
+     /*}*/
+/*
+.inner > * {
+       white-space: nowrap;
+       /*background: purple;*/
+   /*    padding: 0 var(--cDelta);/*604/2 la otra mitad del ancho!!*/
+   /*  }*/

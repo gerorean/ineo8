@@ -1,0 +1,45 @@
+conectar el celu por USB
+ajustes equipo/sistema depuracion 7clics
+ajustes equipo/sistema herramientas desarrollo
+chrome://inspect/#devices
+
+reemplazar
+let x var
+a()=> x function a()
+
+trabajar en el reemplazo de max
+
+
+
+en css:
+var, max, calc, , ni vh/vw por valores fijos
+ejemplo:
+.cCel0 {
+  height: calc(100vh - 0.5vh - max(var(--z), 5vh) - var(--kdot));
+}
+
+js:
+<script>
+  function ajustarAlturaCelular() {
+    const z = 40;       // valor fijo o dinámico que vos definas
+    const kdot = 10;    // idem
+
+    const vh = window.innerHeight;
+    const altura = vh - 0.5 * vh - Math.max(z, 0.05 * vh) - kdot;
+
+    // Aplicar al elemento
+    const cel0 = document.querySelector('.cCel0');
+    if (cel0) {
+      cel0.style.height = altura + 'px';
+    }
+  }
+
+  // Ejecutar al cargar
+  window.addEventListener('load', ajustarAlturaCelular);
+
+  // Y también cuando se redimensione la pantalla (opcional)
+  window.addEventListener('resize', ajustarAlturaCelular);
+</script>
+
+
+
