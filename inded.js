@@ -1004,7 +1004,7 @@ let c003Z =/*mI*/ [['Casillas', 1, 2, 3, 4, 5, 6, 7, 8],
 
 /* 3a * /
 let mIc003Z = liZtZObject;
-/* 3a * /
+/* 3ab */
 
 /* 4a */
 let mIc003Z =[['Casillas', 1, 2, 3, 4],
@@ -1017,7 +1017,7 @@ let mIc003Z =[['Casillas', 1, 2, 3, 4],
 [7,['young man smiling', 'young man smiling'],['Joven sonriendo', 'Joven sonriendo'],['jeune homme souriant', 'jeune homme souriant'],['웃는 청년', '웃는 청년']],
 [8,['emprendimiento', 'empre2'],['emprendedora', 'emprendedora'],['emprendimiento', 'empre2'],['emprendimiento', 'empre2']]
 ];
-/* 4b * /
+/* 4b */
 
 //CONTROLAR anuncios
 let c003B =/*mI*/[['Recursos/ Casillas..', 1, 2, 3, 4, 5, 6, 7, 8],
@@ -1035,7 +1035,7 @@ let c003B =/*mI*/[['Recursos/ Casillas..', 1, 2, 3, 4, 5, 6, 7, 8],
 
 /* 5a * /
 let mIc003B = liZtBObject;
-/* 5b * /
+/* 5b */
 
 /* 6a */
 let mIc003B =[['Recursos/Casillas', '1 0:Imag,1:Icon,2:Texto,3ImagenA,4VideoA', '2 id de la Imag, Icon o Texto', '3 onclick function,vacio=NO PERMITIDA(INFO)/id"apuntador"', '4 Visible 1:SI 0:no', '5 0:FotI 1:Vide 2:FotM 3:Text 4:In 5:Out', '6 id Video([5]1) o id foto([5]0/2)', '7 id Texto Icono', '8 ids Iconos Capa1', '9 ids Iconos Capa2', '10 Capa3 Estado 0: 1:/ 2:_ 3: ? 4: -'],
@@ -1048,7 +1048,7 @@ let mIc003B =[['Recursos/Casillas', '1 0:Imag,1:Icon,2:Texto,3ImagenA,4VideoA', 
 [7 	,[3, 3],[89, 89],0,1,[0, 0],[0, 0],[0, 0],[0, 0],[0, 0],[0, 0]],
 [8 	,[3, 3],[93, 93],0,1,[0, 0],[0, 0],[0, 0],[0, 0],[0, 0],[0, 0]]
 ]
-/* 6b * /
+/* 6b */
 
 //ANUNCIOS CON JSON.. usando rrr3* y mIrrr3* desde r003* y mIr003*
 let mIrrr3A = mIr003A;

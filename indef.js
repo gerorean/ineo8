@@ -6910,7 +6910,8 @@ f0142=()=>//CONSULTAR a la base de datos por cierta collección Valida
 						//g00VARS[86][2]=1;
 	
 	
-						if(nruta == '7/1/8/2/2')//Bingo!
+						if(nruta == '7/1/8/4')//Bingo!
+						//if(nruta == '7/1/8/2/2')//Bingo!
 						{	g00VARS[86][2]=0;
 							console.error('  - 0 rta SI hay anuncios -');
 						}
